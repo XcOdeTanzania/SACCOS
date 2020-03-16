@@ -35,4 +35,25 @@ Route::get('/deposit/deposited', function () {
     return view('pages.deposit.deposited');
 });
 
+// saving roots start
+
+Route::get('/savings/add', function () {
+    return view('pages.savings.add');
+});
+
+Route::get('/savings/withdrawn', function () {
+    return view('pages.savings.withdrawn');
+});
+
+Route::get('/savings/deposited', function () {
+    return view('pages.savings.deposited');
+});
+
+Route::get('/savings/deposited', function () {
+    return view('pages.savings.types');
+});
+
+Route::get('/savings/membersdeposit', function () {
+    return view('pages.savings.membersdeposit');
+});
 

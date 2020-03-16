@@ -147,8 +147,32 @@ return [
         'icon' => 'icon-doc',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Add Saving',
+                'route' => 'savings/add',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Withdraw',
+                'route' => 'savings/withdrawn',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Deposited',
+                'route' => 'savings/deposited',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Types',
+                'route' => 'savings/types',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Members Deposit',
+                'route' => 'savings/membersdeposit',
                 'translate' => 'sidebar.nav.pages.LOGIN'
             ],
 
