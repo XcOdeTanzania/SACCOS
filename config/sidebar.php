@@ -350,8 +350,26 @@ return [
         'icon' => 'icon-pie-chart',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Shares',
+                'route' => 'shares/shares',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Add',
+                'route' => 'shares/add',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Withdrawn',
+                'route' => 'shares/withdrawn',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Sales Report',
+                'route' => 'shares/salesreport',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 

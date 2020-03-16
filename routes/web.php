@@ -57,3 +57,23 @@ Route::get('/savings/membersdeposit', function () {
     return view('pages.savings.membersdeposit');
 });
 
+// shares roots starts here
+
+Route::get('/shares/add', function () {
+    return view('pages.shares.add');
+});
+
+Route::get('/shares/withdrawn', function () {
+    return view('pages.shares.withdrawn');
+});
+
+Route::get('/shares/salesreport', function () {
+    return view('pages.shares.salesreport');
+});
+
+Route::get('/shares/shares', function () {
+    return view('pages.shares.shares');
+});
+
+
+
