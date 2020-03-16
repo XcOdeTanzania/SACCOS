@@ -8,7 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <link rel="icon" type="image/x-icon" href="{{asset('angle/favicon.ico')}}" />
 
-        <title> SAMIS - Microfinance </title>
+        <title> SAMIS - Saccos </title>
 
         <!-- =============== VENDOR STYLES ===============-->
         <link rel="stylesheet" href="{{ asset('angle/css/vendor.css') }}" />
