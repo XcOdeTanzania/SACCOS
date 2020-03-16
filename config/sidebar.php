@@ -120,8 +120,20 @@ return [
         'icon' => 'icon-credit-card',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Withdrawn',
+                'route' => 'deposit/withdrawn',
+                'translate' => 'sidebar.nav.map.GOOGLE'
+            ],
+
+            [
+                'text' => 'Deposited',
+                'route' => 'deposit/deposited',
+                'translate' => 'sidebar.nav.map.GOOGLE'
+            ],
+
+            [
+                'text' => 'Add Deposit',
+                'route' => 'deposit/add',
                 'translate' => 'sidebar.nav.map.GOOGLE'
             ],
 

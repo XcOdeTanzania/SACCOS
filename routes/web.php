@@ -20,3 +20,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//deposit roots start
+
+Route::get('/deposit/add', function () {
+    return view('pages.deposit.add');
+});
+
+Route::get('/deposit/withdrawn', function () {
+    return view('pages.deposit.withdrawn');
+});
+
+Route::get('/deposit/deposited', function () {
+    return view('pages.deposit.deposited');
+});
+
+
