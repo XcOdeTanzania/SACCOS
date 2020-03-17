@@ -41,19 +41,41 @@ return [
         'text' => 'Saccos Info',
         'route' => 'saccosinfo',
         'icon' => 'icon-info',
-        'alert' => '30',
-        'translate' => 'sidebar.nav.WIDGETS'
+        'submenu' => [
+            [
+                'text' => 'Edit Info',
+                'route' => 'saccos_info/change',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Allow to change Info',
+                'route' =>'saccos_info/allow',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Prevent Reporting',
+                'route' =>'saccos_info/prevent',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+
+
+        ],
+        'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
     [
-        'text' => 'Matego',
-        'route' => 'matego',
+        'text' => 'Matengo',
+        'route' => 'matengo',
         'icon' => 'icon-layers',
         'submenu' => [
             [
                 'text' => '',
-                'route' => '#'
-            ]
-        ]
+                'route' => '#',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+
+
+        ],
+        'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
 
     [

@@ -76,5 +76,19 @@ Route::get('/shares/shares', function () {
     return view('pages.shares.shares');
 });
 
+// saccos_info roots start here
+
+Route::get('/saccos_info/change',function () {
+    return view('pages.saccos_info.change');
+});
+
+Route::get('/saccos_info/allow', function (){
+    return view('pages.saccos_info.allow');
+});
+
+Route::get('/saccos_info/prevent', function (){
+    return view('pages.saccos_info.prevent');
+});
+
 
 
