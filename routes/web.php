@@ -123,3 +123,31 @@ Route::get('/users/info', function () {
 Route::get('/users/list', function () {
     return view('pages.users.list');
 });
+
+// bank&cash roots start here
+
+Route::get('/bank_cash/moneybanks', function () {
+    return view('pages.bank_cash.moneybanks');
+});
+
+
+Route::get('/bank_cash/accounts', function () {
+    return view('pages.bank_cash.accounts');
+});
+
+Route::get('/bank_cash/reminders', function () {
+    return view('pages.bank_cash.reminders');
+});
+
+Route::get('/bank_cash/cash', function () {
+    return view('pages.bank_cash.cash');
+});
+
+Route::get('/bank_cash/moneyCash', function () {
+    return view('pages.bank_cash.moneyCash');
+});
+
+Route::get('/bank_cash/transactions', function () {
+    return view('pages.bank_cash.transactions');
+});
+

@@ -109,8 +109,33 @@ return [
         'icon' => 'icon-note',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Money Banks',
+                'route' => '/bank_cash/moneybanks',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+            [
+                'text' => 'Bank Accounts',
+                'route' => '/bank_cash/accounts',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+            [
+                'text' => 'Bank Reminders',
+                'route' => '/bank_cash/reminders',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+            [
+                'text' => 'Cash Reminders',
+                'route' => '/bank_cash/cash',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+            [
+                'text' => 'Cash Money',
+                'route' => '/bank_cash/moneyCash',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+            [
+                'text' => 'Cashier Transactions',
+                'route' => '/bank_cash/transactions',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
