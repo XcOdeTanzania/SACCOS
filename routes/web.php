@@ -50,7 +50,7 @@ Route::get('/savings/deposited', function () {
     return view('pages.savings.deposited');
 });
 
-Route::get('/savings/deposited', function () {
+Route::get('/savings/types', function () {
     return view('pages.savings.types');
 });
 
@@ -76,19 +76,25 @@ Route::get('/shares/shares', function () {
     return view('pages.shares.shares');
 });
 
-// saccos_info roots start here
+// income roots starts here
 
-Route::get('/saccos_info/change',function () {
-    return view('pages.saccos_info.change');
+Route::get('/income/add', function () {
+    return view('pages.income.add');
 });
 
-Route::get('/saccos_info/allow', function (){
-    return view('pages.saccos_info.allow');
+Route::get('/income/addtypes', function () {
+    return view('pages.income.addtypes');
 });
 
-Route::get('/saccos_info/prevent', function (){
-    return view('pages.saccos_info.prevent');
+Route::get('/income/types', function () {
+    return view('pages.income.types');
 });
 
+Route::get('/income/reports', function () {
+    return view('pages.income.reports');
+});
 
+Route::get('/income/registeraccountreceivable', function () {
+    return view('pages.income.registeraccountreceivable');
+});
 
