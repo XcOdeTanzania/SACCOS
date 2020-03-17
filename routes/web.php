@@ -111,3 +111,15 @@ Route::get('/saccos_info/prevent', function () {
     return view('pages.saccos_info.prevent');
 });
 
+// users roots start here
+Route::get('/users/add', function () {
+    return view('pages.users.add');
+});
+
+Route::get('/users/info', function () {
+    return view('pages.users.info');
+});
+
+Route::get('/users/list', function () {
+    return view('pages.users.list');
+});

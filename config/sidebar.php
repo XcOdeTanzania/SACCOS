@@ -84,8 +84,18 @@ return [
         'icon' => 'icon-user',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#s',
+                'text' => 'Add user',
+                'route' => 'users/add',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Users Information',
+                'route' => 'users/info',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Users list',
+                'route' => 'users/list',
                 'translate' => 'sidebar.nav.element.BUTTON'
             ],
 
