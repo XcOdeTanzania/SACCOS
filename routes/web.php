@@ -49,7 +49,7 @@ Route::get('/savings/deposited', function () {
     return view('pages.savings.deposited');
 });
 
-Route::get('/savings/deposited', function () {
+Route::get('/savings/types', function () {
     return view('pages.savings.types');
 });
 
@@ -75,5 +75,25 @@ Route::get('/shares/shares', function () {
     return view('pages.shares.shares');
 });
 
+// income roots starts here
 
+Route::get('/income/add', function () {
+    return view('pages.income.add');
+});
+
+Route::get('/income/addtypes', function () {
+    return view('pages.income.addtypes');
+});
+
+Route::get('/income/types', function () {
+    return view('pages.income.types');
+});
+
+Route::get('/income/reports', function () {
+    return view('pages.income.reports');
+});
+
+Route::get('/income/provisionalandaccrual', function () {
+    return view('pages.income.provisionalandaccrual');
+});
 

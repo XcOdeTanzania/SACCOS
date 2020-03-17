@@ -260,8 +260,26 @@ return [
         'icon' => 'icon-plus',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Add',
+                'route' => 'income/add',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Types',
+                'route' => 'income/types',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Add Types',
+                'route' => 'income/addtypes',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Reports',
+                'route' => 'income/reports',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 

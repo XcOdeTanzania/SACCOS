@@ -4,7 +4,7 @@
         <!-- START card-->
         <div class="card card-flat">
             <div class="card-header text-center bg-dark text-white">
-                SAMIS - MICROFINANCE
+                SAMIS - SACCOS
                 {{--<a href="#"><img class="block-center" src="img/logo.png" alt="Image" /></a>--}}
             </div>
             <div class="card-body">
