@@ -41,19 +41,41 @@ return [
         'text' => 'Saccos Info',
         'route' => 'saccosinfo',
         'icon' => 'icon-info',
-        'alert' => '30',
-        'translate' => 'sidebar.nav.WIDGETS'
+        'submenu' => [
+            [
+                'text' => 'Edit Info',
+                'route' => 'saccos_info/change',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Allow to change Info',
+                'route' =>'saccos_info/allow',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Prevent Reporting',
+                'route' =>'saccos_info/prevent',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+
+
+        ],
+        'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
     [
-        'text' => 'Matego',
-        'route' => 'matego',
+        'text' => 'Matengo',
+        'route' => 'matengo',
         'icon' => 'icon-layers',
         'submenu' => [
             [
                 'text' => '',
-                'route' => '#'
-            ]
-        ]
+                'route' => '#',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+
+
+        ],
+        'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
 
     [
@@ -62,8 +84,18 @@ return [
         'icon' => 'icon-user',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#s',
+                'text' => 'Add user',
+                'route' => 'users/add',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Users Information',
+                'route' => 'users/info',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Users list',
+                'route' => 'users/list',
                 'translate' => 'sidebar.nav.element.BUTTON'
             ],
 
@@ -246,8 +278,49 @@ return [
         'icon' => 'icon-docs',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Balance Sheet',
+                'route' => 'financialReports/balancesheet',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Balance ',
+                'route' => 'financialReports/balance',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Change of Capital ',
+                'route' => 'financialReports/changeofcapital',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Income & Expenses ',
+                'route' => 'financialReports/incomeandexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Members Information ',
+                'route' => 'financialReports/membersinfo',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+             [
+                'text' => ' Non-Members Information ',
+                'route' => 'financialReports/nonmembersinfo',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Divident',
+                'route' => 'financialReports/divident',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Loan Balance',
+                'route' => 'financialReports/loanbalance',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
