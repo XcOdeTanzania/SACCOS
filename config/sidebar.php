@@ -22,14 +22,10 @@ return [
     [
         'text' => 'Dashboard',
         'route' => 'dashboard',
-        'icon' => 'icon-speedometer',
+        'icon' => 'icon-home',
         'alert' => '3',
         'label' => 'badge badge-info',
         'submenu' => [
-            [
-                'text' => 'Dashboard v1',
-                'route' => 'dashboard/dashboard'
-            ],
             [
                 'text' => '',
                 'route' => '#'
@@ -44,7 +40,7 @@ return [
     [
         'text' => 'Saccos Info',
         'route' => 'saccosinfo',
-        'icon' => 'icon-grid',
+        'icon' => 'icon-info',
         'alert' => '30',
         'translate' => 'sidebar.nav.WIDGETS'
     ],
@@ -63,7 +59,7 @@ return [
     [
         'text' => 'Users',
         'route' => 'users',
-        'icon' => 'icon-chemistry',
+        'icon' => 'icon-user',
         'submenu' => [
             [
                 'text' => '',
@@ -92,7 +88,7 @@ return [
     [
         'text' => 'Members',
         'route' => 'charts',
-        'icon' => 'icon-graph',
+        'icon' => 'icon-people',
         'submenu' => [
             [
                 'text' => 'Flot',
@@ -107,7 +103,7 @@ return [
     [
         'text' => 'Loans',
         'route' => 'loans',
-        'icon' => 'icon-grid',
+        'icon' => 'icon-wallet',
         'submenu' => [
             [
                 'text' => 'Standard',
@@ -121,11 +117,23 @@ return [
     [
         'text' => 'Deposit',
         'route' => 'deposit',
-        'icon' => 'icon-map',
+        'icon' => 'icon-credit-card',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Withdrawn',
+                'route' => 'deposit/withdrawn',
+                'translate' => 'sidebar.nav.map.GOOGLE'
+            ],
+
+            [
+                'text' => 'Deposited',
+                'route' => 'deposit/deposited',
+                'translate' => 'sidebar.nav.map.GOOGLE'
+            ],
+
+            [
+                'text' => 'Add Deposit',
+                'route' => 'deposit/add',
                 'translate' => 'sidebar.nav.map.GOOGLE'
             ],
 
@@ -139,8 +147,32 @@ return [
         'icon' => 'icon-doc',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Add Saving',
+                'route' => 'savings/add',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Withdraw',
+                'route' => 'savings/withdrawn',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Deposited',
+                'route' => 'savings/deposited',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Types',
+                'route' => 'savings/types',
+                'translate' => 'sidebar.nav.pages.LOGIN'
+            ],
+
+            [
+                'text' => 'Members Deposit',
+                'route' => 'savings/membersdeposit',
                 'translate' => 'sidebar.nav.pages.LOGIN'
             ],
 
@@ -151,7 +183,7 @@ return [
     [
         'text' => 'Assets',
         'route' => 'assets',
-        'icon' => 'icon-note',
+        'icon' => 'icon-list',
         'submenu' => [
             [
                 'text' => '',
@@ -165,8 +197,8 @@ return [
 
     [
         'text' => 'Expenditure',
-        'route' => 'bank&ashc',
-        'icon' => 'icon-note',
+        'route' => 'bank&cash',
+        'icon' => 'icon-graph',
         'submenu' => [
             [
                 'text' => '',
@@ -181,7 +213,7 @@ return [
 [
         'text' => 'Financial & Report',
         'route' => 'bank&ashc',
-        'icon' => 'icon-note',
+        'icon' => 'icon-docs',
         'submenu' => [
             [
                 'text' => '',
@@ -195,8 +227,8 @@ return [
 
     [
         'text' => 'General Ledger',
-        'route' => 'bank&ashc',
-        'icon' => 'icon-note',
+        'route' => 'generalledger',
+        'icon' => 'icon-notebook',
         'submenu' => [
             [
                 'text' => '',
@@ -225,7 +257,7 @@ return [
     [
         'text' => 'Income',
         'route' => 'income',
-        'icon' => 'icon-note',
+        'icon' => 'icon-plus',
         'submenu' => [
             [
                 'text' => '',
@@ -240,7 +272,7 @@ return [
 [
         'text' => 'Meetings',
         'route' => 'meetings',
-        'icon' => 'icon-note',
+        'icon' => 'icon-calendar',
         'submenu' => [
             [
                 'text' => '',
@@ -255,7 +287,7 @@ return [
 [
         'text' => 'Growth',
         'route' => 'growth',
-        'icon' => 'icon-note',
+        'icon' => 'icon-chart',
         'submenu' => [
             [
                 'text' => '',
@@ -270,7 +302,7 @@ return [
     [
         'text' => 'Announcements',
         'route' => 'announcements',
-        'icon' => 'icon-note',
+        'icon' => 'icon-event',
         'submenu' => [
             [
                 'text' => '',
@@ -285,7 +317,7 @@ return [
     [
         'text' => 'Account',
         'route' => 'account',
-        'icon' => 'icon-note',
+        'icon' => 'icon-calculator',
         'submenu' => [
             [
                 'text' => '',
@@ -300,7 +332,7 @@ return [
     [
         'text' => 'Help',
         'route' => 'help',
-        'icon' => 'icon-note',
+        'icon' => 'icon-question',
         'submenu' => [
             [
                 'text' => '',
@@ -315,11 +347,29 @@ return [
     [
         'text' => 'Shares',
         'route' => 'shares',
-        'icon' => 'icon-note',
+        'icon' => 'icon-pie-chart',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Shares',
+                'route' => 'shares/shares',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Add',
+                'route' => 'shares/add',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Withdrawn',
+                'route' => 'shares/withdrawn',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Sales Report',
+                'route' => 'shares/salesreport',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
