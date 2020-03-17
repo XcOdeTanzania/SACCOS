@@ -136,6 +136,8 @@ Route::get('/financialReports/divident', function () {
 
 Route::get('/financialReports/loanbalance', function () {
     return view('pages.financialReports.loanbalance');
+    });
+
 // saccos info roots start here
 Route::get('/saccos_info/change', function () {
     return view('pages.saccos_info.change');
