@@ -10,21 +10,14 @@
             <div class="card-body">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="registeraccountreceivable-tab" data-toggle="tab" href="#registeraccountreceivable" role="tab"
-                            aria-controls="registeraccountreceivable" aria-selected="true">Register Account Receivable</a>
+                        <a class="nav-link active" id="members-tab" data-toggle="tab" href="#members" role="tab"
+                            aria-controls="members" aria-selected="true">Members</a>
                     </li>
                    <li class="nav-item">
-                    <a class="nav-link " id="viewaccountreceivable-tab" data-toggle="tab" href="#viewaccountreceivable" role="tab"
-                        aria-controls="viewaccountreceivable" aria-selected="false">View Account Receivable</a>
+                    <a class="nav-link " id="nonmembers-tab" data-toggle="tab" href="#nonmembers" role="tab"
+                        aria-controls="nonmembers" aria-selected="false">Non-Members</a>
                 </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="receiveacrualincome-tab" data-toggle="tab" href="#receiveacrualincome"
-                            role="tab" aria-controls="receiveacrualincome" aria-selected="false">Receive Accrual Income </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="viewacrualincome-tab" data-toggle="tab" href="#viewacrualincome" role="tab" aria-controls="viewacrualincome"
-                            aria-selected="false">View Accrual Income </a>
-                    </li>
+
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="registeraccountreceivable" role="tabpanel" aria-labelledby="registeraccountreceivable-tab">
