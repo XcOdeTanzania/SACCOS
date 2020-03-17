@@ -93,7 +93,7 @@ Route::get('/income/reports', function () {
     return view('pages.income.reports');
 });
 
-Route::get('/income/provisionalandaccrual', function () {
-    return view('pages.income.provisionalandaccrual');
+Route::get('/income/registeraccountreceivable', function () {
+    return view('pages.income.registeraccountreceivable');
 });
 
