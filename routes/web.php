@@ -250,3 +250,38 @@ Route::get('/users/info', function () {
 Route::get('/users/list', function () {
     return view('pages.users.list');
 });
+
+// expense roots starts here
+
+Route::get('/expenses/add', function () {
+    return view('pages.expenses.add');
+});
+
+Route::get('/expenses/addsaving', function () {
+    return view('pages.expenses.addsaving');
+});
+
+Route::get('/expenses/reports', function () {
+    return view('pages.expenses.reports');
+});
+
+Route::get('/expenses/prepaidaccount', function () {
+    return view('pages.expenses.prepaidaccount');
+});
+
+Route::get('/expenses/prepaidexpenses', function () {
+    return view('pages.expenses.prepaidexpenses');
+});
+
+Route::get('/expenses/specialimprest', function () {
+    return view('pages.expenses.specialimprest');
+});
+Route::get('/expenses/provisionandaccrual', function () {
+    return view('pages.expenses.provisionandaccrual');
+});
+
+Route::get('/expenses/groupcategory', function () {
+    return view('pages.expenses.groupcategory');
+});
+
+

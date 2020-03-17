@@ -259,14 +259,56 @@ return [
 
     [
         'text' => 'Expenditure',
-        'route' => 'bank&cash',
+        'route' => 'expenditure',
         'icon' => 'icon-graph',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Add',
+                'route' => 'expenses/add',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
+
+            [
+                'text' => 'Add Saving',
+                'route' => 'expenses/addsaving',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Reports',
+                'route' => 'expenses/reports',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Prepaid Expenses',
+                'route' => 'expenses/prepaidexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'PrePaid Account',
+                'route' => 'expenses/prepaidaccount',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Special Imprest',
+                'route' => 'expenses/specialimprest',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+            [
+                'text' => 'Provision & Accrual',
+                'route' => 'expenses/provisionandaccrual',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Group Category',
+                'route' => 'expenses/groupcategory',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
 
         ],
         'translate' => 'sidebar.nav.form.FORM'
