@@ -186,7 +186,37 @@ return [
         'icon' => 'icon-list',
         'submenu' => [
             [
-                'text' => '',
+                'text' => 'All Assets',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'New Asset',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'New assset category',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Asset Categories',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'New Depreciation Record',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Depreciation Records',
                 'route' => '#',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
@@ -231,7 +261,55 @@ return [
         'icon' => 'icon-notebook',
         'submenu' => [
             [
-                'text' => '',
+                'text' => 'Incomes',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Expenditures',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Savings',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Deposit',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Special Deposit',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Shares',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Internal Loans',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'External Loans',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Investment',
                 'route' => '#',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
@@ -299,10 +377,17 @@ return [
         'icon' => 'icon-calendar',
         'submenu' => [
             [
-                'text' => '',
+                'text' => 'New Meeting information',
                 'route' => '#',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
+
+            [
+                'text' => 'List Of Meetings',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
 
         ],
         'translate' => 'sidebar.nav.form.FORM'
@@ -314,7 +399,25 @@ return [
         'icon' => 'icon-chart',
         'submenu' => [
             [
-                'text' => '',
+                'text' => 'Received Savings',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Received Deposit',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Sold Shares',
+                'route' => '#',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Disbursed Loans',
                 'route' => '#',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],

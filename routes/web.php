@@ -97,3 +97,90 @@ Route::get('/income/registeraccountreceivable', function () {
     return view('pages.income.registeraccountreceivable');
 });
 
+//general ledger routes starts here
+Route::get('/generalLedger/incomes', function () {
+    return view('pages.generalLedger.incomes');
+});
+
+Route::get('/generalLedger/expenditures', function () {
+    return view('pages.generalLedger.expenditures');
+});
+
+Route::get('/generalLedger/savings', function () {
+    return view('pages.generalLedger.savings');
+});
+
+Route::get('/generalLedger/deposit', function () {
+    return view('pages.generalLedger.deposit');
+});
+
+Route::get('/generalLedger/specialdeposit', function () {
+    return view('pages.generalLedger.specialDeposit');
+});
+
+Route::get('/generalLedger/shares', function () {
+    return view('pages.generalLedger.shares');
+});
+
+Route::get('/generalLedger/internalloans', function () {
+    return view('pages.generalLedger.internalLoans');
+});
+
+Route::get('/generalLedger/externalloans', function () {
+    return view('pages.generalLedger.externalLoans');
+});
+
+Route::get('/generalLedger/investment', function () {
+    return view('pages.generalLedger.investment');
+});
+
+//assets routes starts here
+Route::get('/assets/allassets', function () {
+    return view('pages.assets.allAssets');
+});
+
+Route::get('/assets/newAsset', function () {
+    return view('pages.assets.newAsset');
+});
+
+Route::get('/assets/newassetcategory', function () {
+    return view('pages.assets.newAssetCategory');
+});
+
+Route::get('/assets/assetcategories', function () {
+    return view('pages.assets.assetCategories');
+});
+
+Route::get('/assets/newdepreciationrecord', function () {
+    return view('pages.assets.newDepreciationRecord');
+});
+
+Route::get('/assets/depreciationrecords', function () {
+    return view('pages.assets.depreciationRecords');
+});
+
+//meetings routes starts here
+Route::get('/meetings/newmeetinginformation', function () {
+    return view('pages.meetings.newMeetingInformation');
+});
+
+Route::get('/meetings/listofmeetings', function () {
+    return view('pages.meetings.listOfMeetings');
+});
+
+//growth routes starts here
+Route::get('/growth/receivedsavings', function () {
+    return view('pages.growth.receivedSavings');
+});
+
+Route::get('/growth/receiveddeposit', function () {
+    return view('pages.growth.receivedDeposit');
+});
+
+Route::get('/growth/soldshares', function () {
+    return view('pages.growth.soldShares');
+});
+
+Route::get('/growth/disbursedloans', function () {
+    return view('pages.growth.disbursedLoans');
+});
