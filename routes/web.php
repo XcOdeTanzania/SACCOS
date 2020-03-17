@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,7 +50,7 @@ Route::get('/savings/deposited', function () {
     return view('pages.savings.deposited');
 });
 
-Route::get('/savings/deposited', function () {
+Route::get('/savings/types', function () {
     return view('pages.savings.types');
 });
 
@@ -75,5 +76,88 @@ Route::get('/shares/shares', function () {
     return view('pages.shares.shares');
 });
 
+// income roots starts here
+
+Route::get('/income/add', function () {
+    return view('pages.income.add');
+});
+
+Route::get('/income/addtypes', function () {
+    return view('pages.income.addtypes');
+});
+
+Route::get('/income/types', function () {
+    return view('pages.income.types');
+});
+
+Route::get('/income/reports', function () {
+    return view('pages.income.reports');
+});
+
+Route::get('/income/registeraccountreceivable', function () {
+    return view('pages.income.registeraccountreceivable');
+});
+
+// financial Reports
 
 
+Route::get('/financialReports/balancesheet', function () {
+    return view('pages.financialReports.balancesheet');
+});
+
+Route::get('/financialReports/balance', function () {
+    return view('pages.financialReports.balance');
+});
+
+Route::get('/financialReports/cashflow', function () {
+    return view('pages.financialReports.cashflow');
+});
+
+Route::get('/financialReports/changeofcapital', function () {
+    return view('pages.financialReports.changeofcapital');
+});
+
+Route::get('/financialReports/nonmembersinfo', function () {
+    return view('pages.financialReports.nonmembersinfo');
+});
+
+Route::get('/financialReports/membersinfo', function () {
+    return view('pages.financialReports.membersinfo');
+});
+
+
+Route::get('/financialReports/incomeandexpenses', function () {
+    return view('pages.financialReports.incomeandexpenses');
+});
+
+Route::get('/financialReports/divident', function () {
+    return view('pages.financialReports.divident');
+});
+
+Route::get('/financialReports/loanbalance', function () {
+    return view('pages.financialReports.loanbalance');
+// saccos info roots start here
+Route::get('/saccos_info/change', function () {
+    return view('pages.saccos_info.change');
+});
+
+Route::get('/saccos_info/allow', function () {
+    return view('pages.saccos_info.allow');
+});
+
+Route::get('/saccos_info/prevent', function () {
+    return view('pages.saccos_info.prevent');
+});
+
+// users roots start here
+Route::get('/users/add', function () {
+    return view('pages.users.add');
+});
+
+Route::get('/users/info', function () {
+    return view('pages.users.info');
+});
+
+Route::get('/users/list', function () {
+    return view('pages.users.list');
+});

@@ -41,19 +41,41 @@ return [
         'text' => 'Saccos Info',
         'route' => 'saccosinfo',
         'icon' => 'icon-info',
-        'alert' => '30',
-        'translate' => 'sidebar.nav.WIDGETS'
+        'submenu' => [
+            [
+                'text' => 'Edit Info',
+                'route' => 'saccos_info/change',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Allow to change Info',
+                'route' =>'saccos_info/allow',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Prevent Reporting',
+                'route' =>'saccos_info/prevent',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+
+
+        ],
+        'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
     [
-        'text' => 'Matego',
-        'route' => 'matego',
+        'text' => 'Matengo',
+        'route' => 'matengo',
         'icon' => 'icon-layers',
         'submenu' => [
             [
                 'text' => '',
-                'route' => '#'
-            ]
-        ]
+                'route' => '#',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+
+
+        ],
+        'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
 
     [
@@ -62,8 +84,18 @@ return [
         'icon' => 'icon-user',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#s',
+                'text' => 'Add user',
+                'route' => 'users/add',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Users Information',
+                'route' => 'users/info',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Users list',
+                'route' => 'users/list',
                 'translate' => 'sidebar.nav.element.BUTTON'
             ],
 
@@ -216,8 +248,49 @@ return [
         'icon' => 'icon-docs',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Balance Sheet',
+                'route' => 'financialReports/balancesheet',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Balance ',
+                'route' => 'financialReports/balance',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Change of Capital ',
+                'route' => 'financialReports/changeofcapital',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Income & Expenses ',
+                'route' => 'financialReports/incomeandexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Members Information ',
+                'route' => 'financialReports/membersinfo',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+             [
+                'text' => ' Non-Members Information ',
+                'route' => 'financialReports/nonmembersinfo',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Divident',
+                'route' => 'financialReports/divident',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+             [
+                'text' => 'Loan Balance',
+                'route' => 'financialReports/loanbalance',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -260,8 +333,32 @@ return [
         'icon' => 'icon-plus',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Add',
+                'route' => 'income/add',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Types',
+                'route' => 'income/types',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Add Types',
+                'route' => 'income/addtypes',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Reports',
+                'route' => 'income/reports',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Provision & Accrual',
+                'route' => 'income/registeraccountreceivable',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -376,178 +473,5 @@ return [
         ],
         'translate' => 'sidebar.nav.form.FORM'
     ],
-
-    // [
-    //     'text' => 'Shares',
-    //     'route' => 'shares',
-    //     'icon' => 'icon-cup',
-    //     'submenu' => [
-    //         [
-    //             'text' => '',
-    //             'route' => '#',
-    //             'icon' => 'fas fa-angle-right',
-    //             'submenu' => [
-    //                 [
-    //                     'text' => 'List',
-    //                     'route' => 'extras/blog/list'
-    //                 ],
-    //                 [
-    //                     'text' => 'Post',
-    //                     'route' => 'extras/blog/post'
-    //                 ],
-    //                 [
-    //                     'text' => 'Articles',
-    //                     'route' => 'extras/blog/articles'
-    //                 ],
-    //                 [
-    //                     'text' => 'Article View',
-    //                     'route' => 'extras/blog/article-view'
-    //                 ]
-    //             ]
-    //         ],
-    //         [
-    //             'text' => 'eCommerce',
-    //             'route' => 'extras/ecommerce',
-    //             'icon' => 'fas fa-angle-right',
-    //             'submenu' => [
-    //                 [
-    //                     'text' => 'Orders',
-    //                     'route' => 'extras/ecommerce/orders',
-    //                     'alert' => '10',
-    //                     'label' => 'badge badge-info'
-    //                 ],
-    //                 [
-    //                     'text' => 'Order View',
-    //                     'route' => 'extras/ecommerce/order-view'
-    //                 ],
-    //                 [
-    //                     'text' => 'Products',
-    //                     'route' => 'extras/ecommerce/products'
-    //                 ],
-    //                 [
-    //                     'text' => 'Product View',
-    //                     'route' => 'extras/ecommerce/product-view'
-    //                 ],
-    //                 [
-    //                     'text' => 'Checkout',
-    //                     'route' => 'extras/ecommerce/checkout'
-    //                 ]
-    //             ]
-    //         ],
-    //         [
-    //             'text' => 'Forum',
-    //             'route' => 'extras/forum',
-    //             'icon' => 'fas fa-angle-right',
-    //             'submenu' => [
-    //                 [
-    //                     'text' => 'Categories',
-    //                     'route' => 'extras/forum/categories'
-    //                 ],
-    //                 [
-    //                     'text' => 'Topics',
-    //                     'route' => 'extras/forum/topics'
-    //                 ],
-    //                 [
-    //                     'text' => 'Discussion',
-    //                     'route' => 'extras/forum/discussion'
-    //                 ]
-    //             ]
-    //         ],
-    //         [
-    //             'text' => 'Contacts',
-    //             'route' => 'extras/contacts'
-    //         ],
-    //         [
-    //             'text' => 'Contact details',
-    //             'route' => 'extras/contact-details'
-    //         ],
-    //         [
-    //             'text' => 'Projects',
-    //             'route' => 'extras/projects'
-    //         ],
-    //         [
-    //             'text' => 'Projects details',
-    //             'route' => 'extras/project-details'
-    //         ],
-    //         [
-    //             'text' => 'Team viewer',
-    //             'route' => 'extras/team-viewer'
-    //         ],
-    //         [
-    //             'text' => 'Social board',
-    //             'route' => 'extras/social-board'
-    //         ],
-    //         [
-    //             'text' => 'Vote links',
-    //             'route' => 'extras/vote-links'
-    //         ],
-    //         [
-    //             'text' => 'Bug tracker',
-    //             'route' => 'extras/bug-tracker'
-    //         ],
-    //         [
-    //             'text' => 'FAQ',
-    //             'route' => 'extras/faq'
-    //         ],
-    //         [
-    //             'text' => 'Help Center',
-    //             'route' => 'extras/help-center'
-    //         ],
-    //         [
-    //             'text' => 'Followers',
-    //             'route' => 'extras/followers'
-    //         ],
-    //         [
-    //             'text' => 'Settings',
-    //             'route' => 'extras/settings'
-    //         ],
-    //         [
-    //             'text' => 'Plans',
-    //             'route' => 'extras/plans'
-    //         ],
-    //         [
-    //             'text' => 'File manager',
-    //             'route' => 'extras/file-manager'
-    //         ],
-    //         [
-    //             'text' => 'Mailbox',
-    //             'route' => 'extras/mailbox',
-    //             'translate' => 'sidebar.nav.extra.MAILBOX'
-    //         ],
-    //         [
-    //             'text' => 'Timeline',
-    //             'route' => 'extras/timeline',
-    //             'translate' => 'sidebar.nav.extra.TIMELINE'
-    //         ],
-    //         [
-    //             'text' => 'Calendar',
-    //             'route' => 'extras/calendar',
-    //             'translate' => 'sidebar.nav.extra.CALENDAR'
-    //         ],
-    //         [
-    //             'text' => 'Invoice',
-    //             'route' => 'extras/invoice',
-    //             'translate' => 'sidebar.nav.extra.INVOICE'
-    //         ],
-    //         [
-    //             'text' => 'Search',
-    //             'route' => 'extras/search',
-    //             'translate' => 'sidebar.nav.extra.SEARCH'
-    //         ],
-    //         [
-    //             'text' => 'Todo List',
-    //             'route' => 'extras/todo',
-    //             'translate' => 'sidebar.nav.extra.TODO'
-    //         ],
-    //         [
-    //             'text' => 'Profile',
-    //             'route' => 'extras/profile',
-    //             'translate' => 'sidebar.nav.extra.PROFILE'
-    //         ]
-
-    //     ],
-    //     'translate' => 'sidebar.nav.extra.EXTRA'
-    // ]
-
 
 ];
