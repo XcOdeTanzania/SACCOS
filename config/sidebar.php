@@ -512,8 +512,32 @@ return [
         'icon' => 'icon-note',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'View',
+                'route' => 'estimates/view',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Edit Expenditure',
+                'route' => 'estimates/editexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Edit Income',
+                'route' => 'estimates/editincome',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Prepare Expenditure',
+                'route' => 'estimates/prepareexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Prepare Income',
+                'route' => 'estimates/prepareincome',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
