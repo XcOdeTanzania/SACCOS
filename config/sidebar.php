@@ -591,13 +591,13 @@ return [
         'submenu' => [
             [
                 'text' => 'New Meeting information',
-                'route' => '#',
+                'route' => 'meetings/newmeetinginformation',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'List Of Meetings',
-                'route' => '#',
+                'route' => 'meetings/listofmeetings',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
