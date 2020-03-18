@@ -137,10 +137,10 @@ Route::get('/generalLedger/investment', function () {
 
 //assets routes starts here
 Route::get('/assets/allassets', function () {
-    return view('pages.assets.allAssets');
+    return view('pages.assets.allassets');
 });
 
-Route::get('/assets/newAsset', function () {
+Route::get('/assets/newasset', function () {
     return view('pages.assets.newAsset');
 });
 
@@ -167,6 +167,15 @@ Route::get('/meetings/newmeetinginformation', function () {
 
 Route::get('/meetings/listofmeetings', function () {
     return view('pages.meetings.listOfMeetings');
+});
+
+//announcements routes starts here
+Route::get('/announcements/listofannouncements', function () {
+    return view('pages.announcements.listOfAnnouncements');
+});
+ //help routes starts here
+ Route::get('/help/helpdetails', function () {
+    return view('pages.help.helpDetails');
 });
 
 //growth routes starts here

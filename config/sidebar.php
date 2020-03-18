@@ -293,37 +293,37 @@ return [
         'submenu' => [
             [
                 'text' => 'All Assets',
-                'route' => '#',
+                'route' => 'assets/allassets',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'New Asset',
-                'route' => '#',
+                'route' => 'assets/newasset',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'New assset category',
-                'route' => '#',
+                'route' => 'assets/newassetcategory',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Asset Categories',
-                'route' => '#',
+                'route' => 'assets/assetcategories',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'New Depreciation Record',
-                'route' => '#',
+                'route' => 'assets/newdepreciationrecord',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Depreciation Records',
-                'route' => '#',
+                'route' => 'assets/depreciationrecords',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -446,60 +446,60 @@ return [
 
     [
         'text' => 'General Ledger',
-        'route' => 'generalledger',
+        'route' => 'generalLedger',
         'icon' => 'icon-notebook',
         'submenu' => [
             [
                 'text' => 'Incomes',
-                'route' => '#',
+                'route' => 'generalLedger/incomes',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Expenditures',
-                'route' => '#',
+                'route' => 'generalLedger/expenditures',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Savings',
-                'route' => '#',
+                'route' => 'generalLedger/savings',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Deposit',
-                'route' => '#',
+                'route' => 'generalLedger/deposit',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Special Deposit',
-                'route' => '#',
+                'route' => 'generalLedger/specialdeposit',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Shares',
-                'route' => '#',
+                'route' => 'generalLedger/shares',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Internal Loans',
-                'route' => '#',
+                'route' => 'generalLedger/internalloans',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'External Loans',
-                'route' => '#',
+                'route' => 'generalLedger/externalloans',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Investment',
-                'route' => '#',
+                'route' => 'generalLedger/investment',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -591,13 +591,13 @@ return [
         'submenu' => [
             [
                 'text' => 'New Meeting information',
-                'route' => '#',
+                'route' => 'meetings/newmeetinginformation',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'List Of Meetings',
-                'route' => '#',
+                'route' => 'meetings/listofmeetings',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -613,25 +613,25 @@ return [
         'submenu' => [
             [
                 'text' => 'Received Savings',
-                'route' => '#',
+                'route' => 'growth/receivedsavings',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Received Deposit',
-                'route' => '#',
+                'route' => 'growth/receiveddeposit',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Sold Shares',
-                'route' => '#',
+                'route' => 'growth/soldshares',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Disbursed Loans',
-                'route' => '#',
+                'route' => 'growth/disbursedloans',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -645,8 +645,8 @@ return [
         'icon' => 'icon-event',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Office Announcements',
+                'route' => 'announcements/listofannouncements',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
@@ -675,8 +675,8 @@ return [
         'icon' => 'icon-question',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Help Details',
+                'route' => 'help/helpdetails',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
