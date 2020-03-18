@@ -1,41 +1,104 @@
 @extends('layouts.app')
 @section('content')
-<!-- START card-->
-<div class="card card-default">
-    <div class="content-heading ">
-        <h2>Sales Report</h2>
+<div class="content-heading">
+    <div>
+        WITHDRAWN
     </div>
-    <div class="card-body">
-        <form class="form-horizontal" method="get" action="/">
+</div>
+<!-- START row-->
+<div class="row">
+    <div class="col-xl-12">
+        <!-- START card-->
+        <div class="card card-default">
+            <div class="card-header">
+                <div class="col">
+                    <div class="row">
+                        <label for="user" class="col-form-label mr-2">From:</label>
+                        <div>
+                            <div class="input-group date AngleDate">
+                                <input id="from" class="form-control" type="text" />
+                                <span class="input-group-append input-group-addon">
+                                    <span class="input-group-text fas fa-calendar-alt"></span></span>
+                            </div>
+                        </div>
+                        <label for="user" class="ml-4 col-form-label mr-2">To:</label>
+                        <div>
+                            <div class="input-group date AngleDate">
+                                <input id="to" class="form-control" type="text" />
+                                <span class="input-group-append input-group-addon">
+                                    <span class="input-group-text fas fa-calendar-alt"></span></span>
+                            </div>
+                        </div>
+                        <div class="row from-control">
+                            <div class="col-2"></div>
+                            <div class="col"><select name="option" class="form-control" id="accountag">
+                                    <option>Select</option>
+                                    <option>Members</option>
+                                    <option>Non-Members</option>
 
-            <fieldset>
-                <div class="form-group row mb-2"><label class="col-md-2 col-form-label mb-2">From:</label>
-                    <div class="col-xl-6 col-10">
-                        <div class="input-group date" id="datetimepicker1"><input class="form-control" type="date"><span
-                                class="input-group-append input-group-addon"></span></div>
-                    </div>
-                </div><br><br>
-                <div class="form-group row mb-2"><label class="col-md-2 col-form-label mb-2">To:</label>
-                    <div class="col-xl-6 col-10">
-                        <div class="input-group date" id="datetimepicker1"><input class="form-control" type="date"><span
-                                class="input-group-append input-group-addon"></span></div>
+                                </select></div>
+                        </div>
+                        <div class="row from-control">
+                            <div class="col-2"></div>
+                            <button class=" form-group btn btn-primary ml-3  " type="submit">Search</button>
+                        </div>
+
                     </div>
                 </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive table-bordered">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr class="bg-gray">
+                                <th></th>
+                                <th>Members Name</th>
+                                <th>Members Number</th>
+                                <th>Date </th>
+                                <th>Quantity</th>
+                                <th>Value</th>
+                                <th>Receipt</th>
 
-                <br><br>
-                <div class="form-group row"><label class="col-md-2 col-form-label" for="input-id-1">Members</label>
-                    <div class="col-md-6"><select name="accounttag" class="form-control" id="accountag">
-                            <option>Select</option>
-                            <option>Members</option>
-                            <option>Non-Members</option>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for($i=0; $i<3 ; $i++) <tr>
+                                <td>{{$i + 1}}</td>
+                                <td>Mathias</td>
+                                <td>66</td>
+                                <td>31-04-2018</td>
+                                <td>3</td>
+                                <td>12%</td>
+                                <td>36</td>
 
-                        </select></div>
-                </div><br><br>
-                <div> <a href="#"> <button class="btn btn-primary" type="submit">search</button></a></div>
-            </fieldset>
-        </form>
-    </div><!-- END card-->
-</div>
-@endsection
-@section('styles')@endsection
-@section('scripts')@endsection
+                                <td>
+
+                                    <i class="fa fa-pen m-2 text-danger" data-toggle="tooltip" data-placement="top"
+                                        title="Edit">
+                                    </i>
+                                </td>
+                                </tr>
+                                @endfor
+                                <tr class="bg-gray">
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>9.00</td>
+                                    <td>34%</td>
+                                    <td></td>
+                                    <td><button class="btn btn-primary btn-sm m-1">Download</button> </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- END card-->
+        <!-- END row-->
+        @endsection
+        @section('styles')@endsection
+        @section('scripts')
+        <script src="{{ asset('angle/js/forms.js') }}"></script>
+        @endsection

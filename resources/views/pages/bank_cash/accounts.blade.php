@@ -17,7 +17,7 @@
                             <thead>
                                 <tr>
                                     <th>Name Of Account</th>
-                                    
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -39,7 +39,7 @@
 
                             </tbody>
                         </table>
-                    </div>
+                    
                     </div><br><br>
                     <div><a href="#"><button class="btn btn-primary" type="submit">Add</button></a></div>
                     <!-- END table-responsive-->

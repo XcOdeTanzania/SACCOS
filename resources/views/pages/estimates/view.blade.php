@@ -1,78 +1,92 @@
 @extends('layouts.app')
 @section('content')
-<!-- START card-->
-<div class="card card-default">
-    <div class="content-heading ">
-        <h2>VIEW ESTIMATES</h2>
+<div class="content-heading">
+    <div>
+    View Estimates
     </div>
-    <div class="card-body">
-        <form class="form-horizontal" method="get" action="/">
+</div>
+<!-- START row-->
+<div class="row">
+    <div class="col-xl-12">
+        <!-- START card-->
+        <div class="card card-default">
+            <div class="card-header">
+                <div class="col">
+                    <div class="row">
+                        <label for="user" class="ml-4 col-form-label mr-2">From:</label>
+                        <div>
 
-            <fieldset>
-                <div class="card-body">
-                    <table class="table table-striped my-4 w-100" id="datatable2">
-                        <thead>
-                            <tr>
-                                <th data-priority="1"></th>
-                                <th>Description</th>
-                                <th>Estimated Expenditure</th>
-                                <th>Expenditure</th>
+                                <div class="input-group date AngleDate">
+                                    <input id="from" class="form-control" type="date" />
+                                    <span class="input-group-append input-group-addon">
+                                        <span class="input-group-text fas fa-calendar-alt"></span></span>
+                                </div>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="gradeX">
-                                <td>INCOME</td>
-                                <td>Riba</td>
-                                <td>00</td>
-                                <td>5000</td>
-
-                            </tr>
-                            <tr class="gradeC">
-                                <td>TOTAL INCOME</td>
-                                <td>Viingilio</td>
-                                <td>00</td>
-                                <td>5000</td>
-
-                            </tr>
-                            <thead>
-                                <tr>
-                                    <th data-priority="1"></th>
-                                    <th>Description</th>
-                                    <th>Estimated Expenditure</th>
-                                    <th>Expenditure</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="gradeX">
-                                    <td>ExPENDITURE</td>
-                                    <td>Riba</td>
-                                    <td>00</td>
-                                    <td>5000</td>
-
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>TOTAL ExPENDITURE</td>
-                                    <td>Viingilio</td>
-                                    <td>00</td>
-                                    <td>5000</td>
-
-                                </tr>
-                            </tbody>
-                        </tbody>
-                    </table>
+                        </div>
+                        <div class="row from-control">
+                            <div class="col-2"></div>
+                            <button class=" form-group btn btn-primary ml-3  " type="submit">Search</button>
+                        </div>
+                    </div>
                 </div>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive table-bordered">
+                <table class="table table-sm">
+                    <thead>
+                        <tr class="bg-gray">
+                            <th style="border-left:1px;border-color:#1D68A7 !important;" colspan="4">DEBIT</th>
+                            <th style="border-left:1px;border-color:#1D68A7 !important;" colspan="3">CREDIT</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th style="border-left:1px;border-color:#1D68A7;!important;">Amount</th>
+                            <th class="boarder-left boarder-primary">Date</th>
+                            <th>Description</th>
+                            <th style="border-left:1px;border-color:#1D68A7;!important;"> Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for($i=0; $i<3 ; $i++) <tr>
+                            <td>{{$i + 1}}</td>
+                            <td>10-01-2020</td>
+                            <td></td>
+                            <td
+                                style="border-left:1px;border-color:#1D68A7; border-top-color: #80808033; border-bottom:0px; !important;">
+                                50000.00</td>
+                            <td>10-01-2020</td>
+                            <td></td>
+                            <td
+                                style="border-left:1px;border-color:#1D68A7; border-top-color: #80808033; border-bottom:0px; !important;">
+                                50000.00</td>
+                            </tr>
+                            @endfor
+                            <tr class="bg-gray">
+                                <td></td>
+                                <td>Total</td>
+                                <td></td>
+                                <td
+                                    style="border-left:1px;border-color:#1D68A7; border-top-color: #80808033; border-bottom:0px; !important;">
+                                    150000.00</td>
+                                <td></td>
+                                <td></td>
+                                <td
+                                    style="border-left:1px;border-color:#1D68A7; border-top-color: #80808033; border-bottom:0px; !important;">
+                                    150000.00</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+    <!-- END card-->
 
-    
-    </fieldset>
-    </form>
-</div><!-- END card-->
-
+</div>
+<!-- END row-->
 @endsection
-@section('styles')
-@endsection
-@section('scripts')
-<script src="{{ asset('angle/js/datatable.js') }}"></script>
-@endsection
+@section('styles')@endsection
+@section('scripts')@endsection

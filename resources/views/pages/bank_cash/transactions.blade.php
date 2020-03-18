@@ -5,39 +5,56 @@
     <div class="content-heading ">
         <h2>Check cash for a specific period</h2>
     </div>
-    <div class="card-body">
-        <form class="form-horizontal" method="get" action="/">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-body">
 
-            <fieldset>
-                <div class="form-group row mb-2"><label class="col-md-2 col-form-label mb-2">Transactions held on the date:</label>
-                    <div class="col-xl-6 col-10">
-                        <div class="input-group date" id="datetimepicker1"><input class="form-control" type="date"><span
-                                class="input-group-append input-group-addon"></span></div>
-                    </div>
-                </div><br><br>
-                <div class="form-group row mb-2"><label class="col-md-2 col-form-label mb-2">To:</label>
-                    <div class="col-xl-6 col-10">
-                        <div class="input-group date" id="datetimepicker1"><input class="form-control" type="date"><span
-                                class="input-group-append input-group-addon"></span></div>
-                    </div>
-                </div>
 
-                <br><br>
-                <div class="form-group row"><label class="col-md-2 col-form-label" for="input-id-1">Cashier</label>
-                    <div class="col-md-6"><select name="accounttag" class="form-control" id="accountag">
-                             <option>All</option>
-                            <option>Khalid Juma</option>
-                            <option>Noela Richard</option>
-                            <option>Hawaa</option>
+                <form class="form-horizontal" method="get" action="">
+                    <fieldset>
+                        <div class="card-header">
+                            <div class="col">
+                                <div class="row">
+                                    <label for="user" class="col-form-label mr-2">From:</label>
+                                    <div>
+                                        <div class="input-group date AngleDate">
+                                            <input id="from" class="form-control" type="text" />
+                                            <span class="input-group-append input-group-addon">
+                                                <span class="input-group-text fas fa-calendar-alt"></span></span>
+                                        </div>
+                                    </div>
+                                    <label for="user" class="ml-4 col-form-label mr-2">To:</label>
+                                    <div>
+                                        <div class="input-group date AngleDate">
+                                            <input id="to" class="form-control" type="text" />
+                                            <span class="input-group-append input-group-addon">
+                                                <span class="input-group-text fas fa-calendar-alt"></span></span>
+                                        </div>
+                                    </div>
 
-                        </select></div>
-                </div><br><br>
-                <div> <a href="#"> <button class="btn btn-primary" type="submit">Check transaction</button></a>
-                    <a href="#"> <button class="btn btn-primary" type="submit">Check the reminder</button></a>
-                </div>
-            </fieldset>
-        </form>
-    </div><!-- END card-->
+                                    <div class="row from-control">
+                                        <div class="col-2"></div>
+                                        <button class=" form-group btn btn-primary ml-3  " type="submit">Check
+                                            Transaction</button>
+                                    </div>
+                                    <div class="row from-control">
+                                        <div class="col-2"></div>
+                                        <button class=" form-group btn btn-primary ml-3  " type="submit">Check
+                                            Deposit</button>
+                                    </div>
+
+
+
+                                </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END card-->
 </div>
 @endsection
 @section('styles')@endsection
