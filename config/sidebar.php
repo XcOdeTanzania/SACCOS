@@ -244,37 +244,37 @@ return [
         'submenu' => [
             [
                 'text' => 'All Assets',
-                'route' => '#',
+                'route' => 'assets/allassets',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'New Asset',
-                'route' => '#',
+                'route' => 'assets/newasset',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'New assset category',
-                'route' => '#',
+                'route' => 'assets/newassetcategory',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Asset Categories',
-                'route' => '#',
+                'route' => 'assets/assetcategories',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'New Depreciation Record',
-                'route' => '#',
+                'route' => 'assets/newdepreciationrecord',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Depreciation Records',
-                'route' => '#',
+                'route' => 'assets/depreciationrecords',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 

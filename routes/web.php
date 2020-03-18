@@ -137,10 +137,10 @@ Route::get('/generalLedger/investment', function () {
 
 //assets routes starts here
 Route::get('/assets/allassets', function () {
-    return view('pages.assets.allAssets');
+    return view('pages.assets.allassets');
 });
 
-Route::get('/assets/newAsset', function () {
+Route::get('/assets/newasset', function () {
     return view('pages.assets.newAsset');
 });
 
