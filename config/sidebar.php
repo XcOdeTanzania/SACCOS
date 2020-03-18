@@ -540,25 +540,25 @@ return [
         'submenu' => [
             [
                 'text' => 'Received Savings',
-                'route' => '#',
+                'route' => 'growth/receivedsavings',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Received Deposit',
-                'route' => '#',
+                'route' => 'growth/receiveddeposit',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Sold Shares',
-                'route' => '#',
+                'route' => 'growth/soldshares',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Disbursed Loans',
-                'route' => '#',
+                'route' => 'growth/disbursedloans',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
