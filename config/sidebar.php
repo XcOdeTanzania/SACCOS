@@ -397,60 +397,60 @@ return [
 
     [
         'text' => 'General Ledger',
-        'route' => 'generalledger',
+        'route' => 'generalLedger',
         'icon' => 'icon-notebook',
         'submenu' => [
             [
                 'text' => 'Incomes',
-                'route' => '#',
+                'route' => 'generalLedger/incomes',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Expenditures',
-                'route' => '#',
+                'route' => 'generalLedger/expenditures',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Savings',
-                'route' => '#',
+                'route' => 'generalLedger/savings',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Deposit',
-                'route' => '#',
+                'route' => 'generalLedger/deposit',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Special Deposit',
-                'route' => '#',
+                'route' => 'generalLedger/specialdeposit',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Shares',
-                'route' => '#',
+                'route' => 'generalLedger/shares',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Internal Loans',
-                'route' => '#',
+                'route' => 'generalLedger/internalloans',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'External Loans',
-                'route' => '#',
+                'route' => 'generalLedger/externalloans',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
             [
                 'text' => 'Investment',
-                'route' => '#',
+                'route' => 'generalLedger/investment',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
