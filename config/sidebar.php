@@ -144,12 +144,27 @@ return [
     ],
     [
         'text' => 'Members',
-        'route' => 'charts',
+        'route' => 'members',
         'icon' => 'icon-people',
         'submenu' => [
             [
-                'text' => 'Flot',
-                'route' => 'charts/flot',
+                'text' => 'Additional Information',
+                'route' => 'members/additional',
+                'translate' => 'sidebar.nav.chart.FLOT'
+            ],
+            [
+                'text' => 'Register a Member',
+                'route' => 'members/register',
+                'translate' => 'sidebar.nav.chart.FLOT'
+            ],
+            [
+                'text' => 'Members List',
+                'route' => 'members/list',
+                'translate' => 'sidebar.nav.chart.FLOT'
+            ],
+            [
+                'text' => 'Message to Members',
+                'route' => 'members/messages',
                 'translate' => 'sidebar.nav.chart.FLOT'
             ],
 
@@ -163,11 +178,45 @@ return [
         'icon' => 'icon-wallet',
         'submenu' => [
             [
-                'text' => 'Standard',
-                'route' => 'tables/standard',
+                'text' => 'Loans Type',
+                'route' => 'loans/types',
                 'translate' => 'sidebar.nav.table.STANDARD'
             ],
-
+            [
+                'text' => 'Securities Arrangements',
+                'route' => 'loans/arrangement',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
+            [
+                'text' => 'Local Loans',
+                'route' => 'loans/local',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
+            [
+                'text' => 'External Loans',
+                'route' => 'loans/external',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
+            [
+                'text' => 'PendingApproval',
+                'route' => 'loans/pendingApproval',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
+            [
+                'text' => 'Loans Deposit',
+                'route' => 'loans/deposit',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
+            [
+                'text' => 'External Debtor',
+                'route' => 'loans/debtor',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
+            [
+                'text' => 'List of external debtor',
+                'route' => 'loans/list',
+                'translate' => 'sidebar.nav.table.STANDARD'
+            ],
         ],
         'translate' => 'sidebar.nav.table.TABLE'
     ],
@@ -463,8 +512,32 @@ return [
         'icon' => 'icon-note',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'View',
+                'route' => 'estimates/view',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Edit Expenditure',
+                'route' => 'estimates/editexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Edit Income',
+                'route' => 'estimates/editincome',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Prepare Expenditure',
+                'route' => 'estimates/prepareexpenses',
+                'translate' => 'sidebar.nav.form.STANDARD'
+            ],
+
+            [
+                'text' => 'Prepare Income',
+                'route' => 'estimates/prepareincome',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 

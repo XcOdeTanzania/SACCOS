@@ -312,3 +312,79 @@ Route::get('/bank_cash/transactions', function () {
     return view('pages.bank_cash.transactions');
 });
 
+<<<<<<< HEAD
+=======
+// members roots start here
+
+Route::get('/members/additional', function () {
+    return view('pages.members.additional');
+});
+
+Route::get('/members/register', function () {
+    return view('pages.members.register');
+});
+
+Route::get('/members/list', function () {
+    return view('pages.members.list');
+});
+
+Route::get('/members/messages', function () {
+    return view('pages.members.messages');
+});
+
+// loans roots start here
+
+Route::get('/loans/types', function () {
+    return view('pages.loans.types');
+});
+
+Route::get('/loans/arrangement', function () {
+    return view('pages.loans.arrangement');
+});
+
+Route::get('/loans/local', function () {
+    return view('pages.loans.local');
+});
+
+Route::get('/loans/external', function () {
+    return view('pages.loans.external');
+});
+
+Route::get('/loans/pendingApproval', function () {
+    return view('pages.loans.pendingApproval');
+});
+
+Route::get('/loans/deposit', function () {
+    return view('pages.loans.deposit');
+});
+
+Route::get('/loans/debtor', function () {
+    return view('pages.loans.debtor');
+});
+
+Route::get('/loans/list', function () {
+    return view('pages.loans.list');
+});
+
+>>>>>>> 437698778df9592f5a186a93d0433102f6a5fc3f
+// estimate roots starts here
+
+Route::get('/estimates/view', function () {
+    return view('pages.estimates.view');
+});
+
+Route::get('/estimates/prepareincome', function () {
+    return view('pages.estimates.prepareincome');
+});
+
+Route::get('/estimates/prepareexpenses', function () {
+    return view('pages.estimates.prepareexpenses');
+});
+
+Route::get('/estimates/editincome', function () {
+    return view('pages.estimates.editincome');
+});
+
+Route::get('/estimates/editexpenses', function () {
+    return view('pages.estimates.editexpenses');
+});
