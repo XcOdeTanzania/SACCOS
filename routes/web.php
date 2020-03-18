@@ -169,6 +169,11 @@ Route::get('/meetings/listofmeetings', function () {
     return view('pages.meetings.listOfMeetings');
 });
 
+//announcements routes starts here
+Route::get('/announcements/listofannouncements', function () {
+    return view('pages.announcements.listOfAnnouncements');
+});
+
 //growth routes starts here
 Route::get('/growth/receivedsavings', function () {
     return view('pages.growth.receivedSavings');

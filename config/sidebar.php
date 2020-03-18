@@ -645,8 +645,8 @@ return [
         'icon' => 'icon-event',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Office Announcements',
+                'route' => 'announcements/listofannouncements',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 
