@@ -675,8 +675,8 @@ return [
         'icon' => 'icon-question',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Help Details',
+                'route' => 'help/helpdetails',
                 'translate' => 'sidebar.nav.form.STANDARD'
             ],
 

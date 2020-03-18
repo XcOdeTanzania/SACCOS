@@ -173,6 +173,10 @@ Route::get('/meetings/listofmeetings', function () {
 Route::get('/announcements/listofannouncements', function () {
     return view('pages.announcements.listOfAnnouncements');
 });
+ //help routes starts here
+ Route::get('/help/helpdetails', function () {
+    return view('pages.help.helpDetails');
+});
 
 //growth routes starts here
 Route::get('/growth/receivedsavings', function () {
