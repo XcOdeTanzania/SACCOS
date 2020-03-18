@@ -312,3 +312,24 @@ Route::get('/bank_cash/transactions', function () {
     return view('pages.bank_cash.transactions');
 });
 
+// estimate roots starts here
+
+Route::get('/estimates/view', function () {
+    return view('pages.estimates.view');
+});
+
+Route::get('/estimates/prepareincome', function () {
+    return view('pages.estimates.prepareincome');
+});
+
+Route::get('/estimates/prepareexpenses', function () {
+    return view('pages.estimates.prepareexpenses');
+});
+
+Route::get('/estimates/editincome', function () {
+    return view('pages.estimates.editincome');
+});
+
+Route::get('/estimates/editexpenses', function () {
+    return view('pages.estimates.editexpenses');
+});
