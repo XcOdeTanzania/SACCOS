@@ -312,7 +312,6 @@ Route::get('/bank_cash/transactions', function () {
     return view('pages.bank_cash.transactions');
 });
 
-<<<<<<< HEAD
 // members roots start here
 
 Route::get('/members/additional', function () {
@@ -365,7 +364,6 @@ Route::get('/loans/list', function () {
     return view('pages.loans.list');
 });
 
-=======
 // estimate roots starts here
 
 Route::get('/estimates/view', function () {
@@ -387,4 +385,3 @@ Route::get('/estimates/editincome', function () {
 Route::get('/estimates/editexpenses', function () {
     return view('pages.estimates.editexpenses');
 });
->>>>>>> 503dc15a3f89c0f95216a737c419644d5666bcf7
