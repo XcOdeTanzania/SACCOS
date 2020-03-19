@@ -21,21 +21,18 @@ return [
     ],
     [
         'text' => 'Dashboard',
-        'route' => 'dashboard',
+        'route' => '/',
         'icon' => 'icon-home',
         'alert' => '3',
         'label' => 'badge badge-info',
-        'submenu' => [
-            [
-                'text' => '',
-                'route' => '#'
-            ],
-            [
-                'text' => '',
-                'route' => '#'
-            ]
-        ],
-        'translate' => 'sidebar.nav.DASHBOARD'
+        // 'submenu' => [
+        //     [
+        //         'text' => '',
+        //         'route' => '/'
+        //     ],
+
+        // ],
+        // 'translate' => 'sidebar.nav.DASHBOARD'
     ],
     [
         'text' => 'Saccos Info',

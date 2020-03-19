@@ -394,20 +394,3 @@ Route::get('/estimates/editincome', function () {
 Route::get('/estimates/editexpenses', function () {
     return view('pages.estimates.editexpenses');
 });
-
-// budgets roots start here
-Route::get('/budgets/add', function () {
-    return view('pages.budgets.add');
-});
-
-Route::get('/budgets/list', function () {
-    return view('pages.budgets.list');
-});
-
-Route::get('/budgets/incentives', function () {
-    return view('pages.budgets.incentives');
-});
-
-Route::get('/budgets/statements', function () {
-    return view('pages.budgets.statements');
-});
