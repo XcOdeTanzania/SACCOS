@@ -3,7 +3,7 @@
 <!-- START card-->
 <div class="card card-default">
     <div class="content-heading ">
-        <h2>RECORD IMPREST PAYMENTS</h2>
+        
     </div>
     <div class="card">
         <div class="card-header">
@@ -100,6 +100,66 @@
                                 </div>
                             </fieldset>
                         </form>
+                    </div>
+                    <div class="tab-pane" id="viewimprestrecord" role="tabpanel">
+                        <div class="card-header">
+                            <div class="col">
+                                <div class="row">
+                                    <label for="user" class="col-form-label mr-2">From:</label>
+                                    <div>
+                                        <div class="input-group date AngleDate">
+                                            <input id="from" class="form-control" type="text" />
+                                            <span class="input-group-append input-group-addon">
+                                                <span class="input-group-text fas fa-calendar-alt"></span></span>
+                                        </div>
+                                    </div>
+                                    <label for="user" class="ml-4 col-form-label mr-2">To:</label>
+                                    <div>
+                                        <div class="input-group date AngleDate">
+                                            <input id="to" class="form-control" type="text" />
+                                            <span class="input-group-append input-group-addon">
+                                                <span class="input-group-text fas fa-calendar-alt"></span></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row from-control">
+                                        <div class="col-2"></div>
+                                        <button class=" form-group btn btn-primary ml-3  " type="submit">Search</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="viewimprestbalance" role="tabpanel">
+                        <div class="tab-pane" id="exepenses" role="tabpanel">
+                            <div class="card-body">
+                                <div class="table-responsive table-bordered">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr class="bg-gray">
+                                                <th></th>
+
+                                                <th>Staff Name</th>
+                                                <th>Staff Numbe </th>
+                                                <th>Staff imprest</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for($i=0; $i<3 ; $i++) <tr>
+                                                <td>{{$i + 1}}</td>
+                                                <td>Mathias</td>
+                                                <td>1218</td>
+                                                <td>12</td>
+                                                </tr>
+                                                @endfor
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -14,13 +14,13 @@
                             aria-controls="Category" aria-selected="true">Add Expenses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " id="viewaccountpayable-tab" data-toggle="tab" href="#viewaccountpayable"
-                            role="tab" aria-controls="viewaccountpayable" aria-selected="false">Expenses Category</a>
+                        <a class="nav-link " id="exepenses-tab" data-toggle="tab" href="#exepenses"
+                            role="tab" aria-controls="exepenses" aria-selected="false">Expenses Category</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="registeraccountreceivable" role="tabpanel"
-                        aria-labelledby="registeraccountreceivable-tab">
+                    <div class="tab-pane fade show active" id="Category" role="tabpanel"
+                        aria-labelledby="Category-tab">
                         <form class="form-horizontal" method="get" action="">
                             <fieldset>
                                 <div class="form-group row"><label class="col-md-2 col-form-label" for="input-id-1">
@@ -55,6 +55,45 @@
                                 </div>
                             </fieldset>
                         </form>
+                    </div>
+                    <div class="tab-pane" id="exepenses" role="tabpanel">
+                        <div class="card-body">
+                            <div class="table-responsive table-bordered">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr class="bg-gray">
+                                            <th></th>
+                                            <th>Accounting</th>
+                                            <th>Expenses Name</th>
+                                            <th>Group </th>
+                                            <th>Amount</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for($i=0; $i<3 ; $i++) <tr>
+                                            <td>{{$i + 1}}</td>
+                                            <td>Mathias</td>
+                                            <td>1218</td>
+                                            <td>31-04-2018</td>
+
+
+                                            <td>
+                                                <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
+                                                    <i class="fa fa-edit m-2 text-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="Edit">
+                                                    </i></a>
+                                                <i class="fa fa-trash m-2 text-danger" data-toggle="tooltip" data-placement="top"
+                                                    title="Delete">
+                                                </i>
+                                            </td>
+                                            </tr>
+                                            @endfor
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

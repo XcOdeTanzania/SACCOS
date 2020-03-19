@@ -38,11 +38,7 @@
                                         <button class=" form-group btn btn-primary ml-3  " type="submit">Search
                                             </button>
                                     </div>
-
-
-
                                 </div>
-
                     </fieldset>
                 </form>
             </div>
