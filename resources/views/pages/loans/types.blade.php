@@ -1,54 +1,64 @@
 @extends('layouts.app')
 @section('content')
-    <div class="content-heading">
-        <div>
-            Loan Types
-            <small>All types of loan</small>
-        </div>
-    </div>
-    <!-- START row-->
-        <div class="row">
-            <div class="card card-default">
-                <div class="card-header"></div>
-                <div class="card-body">
-                    <div class="table-responsive table-bordered">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Loan types</th>
-                                    <th>Interest%</th>
-                                    <th>Formula</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Education loan</td>
-                                    <td>37.1</td>
-                                    <td>Reduce</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">Edit</button></a></div></td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Business loan</td>
-                                    <td>76</td>
-                                    <td>Reduce</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">Edit</button></a></div></td>
-                                </tr>
-                            </tbody>
-                            
-                        </table>
-                    </div><br>
-                    <div> <a href="#"> <button class="btn btn-primary" type="submit">Add</button></a></div>
-                </div>
-            </div>
-        </div>
+<div class="content-heading">
+    <div>
+        Loan types
     </div>
 </div>
-    <!-- END row-->
-@endsection
-@section('styles')@endsection
-@section('scripts')@endsection
+<!-- START row-->
+<div class="row">
+    <div class="col-xl-12">
+        <!-- START card-->
+        <div class="card card-default">
+            <div class="card-header">
+                <div class="col">
+                    <div class="row">
+                        <div class="row from-control">
+                            <div class="col-2"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive table-bordered">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr class="bg-gray">
+                                <th>SN</th>
+                                <th>Loan type</th>
+                                <th>Interest%</th>
+                                <th>Formula</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Business Loan</td>
+                                <td>47.1</td>
+                                <td>Reduce</td>
+
+                                <td>
+                                    <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
+                                        <i class="fa fa-edit m-2 text-primary" data-toggle="tooltip"
+                                            data-placement="top" title="Edit">
+                                        </i></a>
+                                    <i class="fa fa-trash m-2 text-danger" data-toggle="tooltip" data-placement="top"
+                                        title="Delete">
+                                    </i>
+                                </td>
+                                </tr>
+                    </table>
+                </div><br>
+                <button href="#addSavingType" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                        class="fa mr-2 fas fa-plus"></em>Add</button>
+            </div>
+        </div>
+        <!-- END card-->
+        <!-- END row-->
+        @endsection
+        @section('styles')@endsection
+        @section('scripts')
+        <script src="{{ asset('angle/js/forms.js') }}"></script>
+        @endsection
