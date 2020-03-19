@@ -654,20 +654,20 @@ return [
         'translate' => 'sidebar.nav.form.FORM'
     ],
 
-    [
-        'text' => 'Account',
-        'route' => 'account',
-        'icon' => 'icon-calculator',
-        'submenu' => [
-            [
-                'text' => '',
-                'route' => '#',
-                'translate' => 'sidebar.nav.form.STANDARD'
-            ],
+    // [
+    //     'text' => 'Account',
+    //     'route' => 'account',
+    //     'icon' => 'icon-calculator',
+    //     'submenu' => [
+    //         [
+    //             'text' => '',
+    //             'route' => '#',
+    //             'translate' => 'sidebar.nav.form.STANDARD'
+    //         ],
 
-        ],
-        'translate' => 'sidebar.nav.form.FORM'
-    ],
+    //     ],
+    //     'translate' => 'sidebar.nav.form.FORM'
+    // ],
 
     [
         'text' => 'Help',
