@@ -20,8 +20,8 @@
                 <div class="form-group row"><label class="col-md-2 col-form-label" for="input-id-1">Category</label>
                     <div class="col-md-6"><select name="accounttag" class="form-control" id="accountag">
                             <option>Select</option>
-                            <option></option>
-                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
 
                         </select></div>
                 </div><br><br>
