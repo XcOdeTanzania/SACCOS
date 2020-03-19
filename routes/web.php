@@ -395,7 +395,7 @@ Route::get('/estimates/editexpenses', function () {
     return view('pages.estimates.editexpenses');
 });
 
-// budgets roots start here
+// budgets roots start here//
 Route::get('/budgets/add', function () {
     return view('pages.budgets.add');
 });
