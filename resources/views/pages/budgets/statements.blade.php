@@ -2,7 +2,7 @@
 @section('content')
 <div class="content-heading">
     <div>
-        Loan types
+        Incentives Statements
     </div>
 </div>
 <!-- START row-->
@@ -26,18 +26,21 @@
                         <thead>
                             <tr class="bg-gray">
                                 <th>SN</th>
-                                <th>Loan type</th>
-                                <th>Interest%</th>
-                                <th>Formula</th>
+                                <th>Month</th>
+                                <th>Year</th>
+                                <th>Amount</th>
+                                <th>Budget</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @for($i=0; $i<3 ; $i++) 
                             <tr>
-                                <td>1</td>
-                                <td>Business Loan</td>
-                                <td>47.1</td>
-                                <td>Reduce</td>
+                                <td>{{$i + 1}}</td>
+                                <td>12</td>
+                                <td>2013</td>
+                                <td>120000</td>
+                                <td>Education</td>
 
                                 <td>
                                     <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
@@ -49,6 +52,7 @@
                                     </i>
                                 </td>
                                 </tr>
+                                @endfor
                     </table>
                 </div><br>
                 <button href="#addSavingType" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em

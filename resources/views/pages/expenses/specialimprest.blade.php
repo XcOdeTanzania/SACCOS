@@ -25,8 +25,8 @@
 
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="registeraccountreceivable" role="tabpanel"
-                        aria-labelledby="registeraccountreceivable-tab">
+                    <div class="tab-pane fade show active" id="specialimprest" role="tabpanel"
+                        aria-labelledby="specialimprest-tab">
                         <form class="form-horizontal" method="get" action="">
                             <fieldset>
 
@@ -108,7 +108,7 @@
                                     <label for="user" class="col-form-label mr-2">From:</label>
                                     <div>
                                         <div class="input-group date AngleDate">
-                                            <input id="from" class="form-control" type="text" />
+                                            <input id="from" class="form-control" type="date" />
                                             <span class="input-group-append input-group-addon">
                                                 <span class="input-group-text fas fa-calendar-alt"></span></span>
                                         </div>
@@ -116,7 +116,7 @@
                                     <label for="user" class="ml-4 col-form-label mr-2">To:</label>
                                     <div>
                                         <div class="input-group date AngleDate">
-                                            <input id="to" class="form-control" type="text" />
+                                            <input id="to" class="form-control" type="date" />
                                             <span class="input-group-append input-group-addon">
                                                 <span class="input-group-text fas fa-calendar-alt"></span></span>
                                         </div>
@@ -124,7 +124,7 @@
 
                                     <div class="row from-control">
                                         <div class="col-2"></div>
-                                        <button class=" form-group btn btn-primary ml-3  " type="submit">Search</button>
+                                        <button class="form-group btn btn-primary ml-3" type="submit">Search</button>
                                     </div>
 
                                 </div>
@@ -141,7 +141,7 @@
                                                 <th></th>
 
                                                 <th>Staff Name</th>
-                                                <th>Staff Numbe </th>
+                                                <th>Staff Number</th>
                                                 <th>Staff imprest</th>
 
                                             </tr>
