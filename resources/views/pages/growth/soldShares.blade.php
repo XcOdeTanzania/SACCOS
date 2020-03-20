@@ -42,6 +42,20 @@
                             </div>
                             </div>
                         </div>
+            <div class ="container-fluid">
+                <div class ="row">
+                <div class="col-12">
+                <div class="card card-default" id="cardChart9">
+                    <div class="card-header">
+                        <div class="card-title">Area Spline</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-spline flot-chart"></div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>            
             <!-- END card-->
         </div>
     </div>
@@ -50,4 +64,6 @@
 @section('styles')@endsection
 @section('scripts')
     <script src="{{ asset('angle/js/forms.js') }}"></script>
+    <script src="{{ asset('angle/js/sparkline.js') }}"></script>
+    <script src="{{ asset('angle/js/flot.js') }}"></script>
 @endsection

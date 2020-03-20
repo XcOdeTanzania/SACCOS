@@ -6,12 +6,13 @@
         </div>
     </div>
     <!-- START row-->
+    <div class ="col">
     <div class="row">
         <div class="col-xl-12">
             <!-- START card-->
             <div class="card card-default">
                 <div class="card-header">
-                    <div class="col">
+                    <div class="col mt-2">
                         <div class="row">
                         <label for="user" class="ml-4 col-form-label mr-2">Year:</label>
                         <div>
@@ -42,12 +43,30 @@
                             </div>
                             </div>
                         </div>
-            <!-- END card-->
+                        <div class ="container-fluid">
+                        <div class="row">
+            <div class="col-xl-12">
+                <div class="card card-default" id="cardChart4">
+                    <div class="card-header">
+                        <div class="card-title">Line</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-line flot-chart"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- END card-->
+    </div>
+    </div>
+    </div>
+    
     <!-- END row-->
 @endsection
 @section('styles')@endsection
 @section('scripts')
     <script src="{{ asset('angle/js/forms.js') }}"></script>
+    <script src="{{ asset('angle/js/sparkline.js') }}"></script>
+    <script src="{{ asset('angle/js/flot.js') }}"></script>
 @endsection

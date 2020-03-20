@@ -33,11 +33,11 @@
                              <div class="col-2"></div>
                                   <button class=" form-group btn btn-primary ml-3  " type="submit">Search</button>
                         </div>
-                            </div>
-                            </div>
-                            </div> 
-                            </div>
-                            </div>
+                        </div>
+                        </div>
+                        </div> 
+                        </div>
+                        </div>
                             <div class="card-body">
                                 <div class="table-responsive table-bordered">
                                     <table class="table table-sm">
