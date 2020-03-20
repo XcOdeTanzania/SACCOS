@@ -38,7 +38,7 @@
                         </div>
                             </div>
                             </div>
-                            </div> 
+                            </div>
                             </div>
                             </div>
                         </div>
@@ -54,10 +54,9 @@
                     </div>
                     </div>
                 </div>
-            </div>            
+            </div>
             <!-- END card-->
-        </div>
-    </div>
+        
     <!-- END row-->
 @endsection
 @section('styles')@endsection
