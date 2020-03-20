@@ -23,25 +23,31 @@
                             <tbody>
                                 <tr>
                                     <td>TRAC SACCOS LTD</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">change</button></a></div></td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">cancel</button></a></div></td>
+                                    <td><a href="#editnameofaccount" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#deletenameofaccount" data-toggle="modal"><i class="fas fa-trash-alt"
+                                            style="color:red"></i></a>
                                 </tr>
                                 <tr>
                                     <td>01JP5678U</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">change</button></a></div></td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">cancel</button></a></div></td>
+                                    <td><a href="#editnameofaccount" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#deletenameofaccount" data-toggle="modal"><i class="fas fa-trash-alt"
+                                            style="color:red"></i></a>
                                 </tr>
                                 <tr>
                                     <td>78HY8J0C67</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">change</button></a></div></td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">cancel</button></a></div></td>
-                                </tr>
-
+                                    <td><a href="#editnameofaccount" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#deletenameofaccount" data-toggle="modal"><i class="fas fa-trash-alt"
+                                            style="color:red"></i></a>
+                                         
                             </tbody>
                         </table>
                     
                     </div><br><br>
-                    <div><a href="#"><button class="btn btn-primary" type="submit">Add</button></a></div>
+                    <button href="#addnameofaccount" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                        class="fa mr-2 fas fa-plus"></em>Add</button>
                     <!-- END table-responsive-->
                 </div>
                </div>
@@ -54,3 +60,75 @@
 @section('scripts')
     <script src="{{ asset('angle/js/sparkline.js') }}"></script>
 @endsection
+
+ <!-- Add Modal HTML -->
+ <div id="addnameofaccount" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add Name Account</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Name of Account</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Add">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit Modal HTML -->
+            <div id="editnameofaccount" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Edit Name of Account</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Name of Account</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Edit">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delete Modal HTML -->
+            <div id="deletenameofaccount" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Delete Name of Account</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are You Sure You Want To Delete This Type?</p>
+                                <p class="text-warning"><small>This action cannot be undone.</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+

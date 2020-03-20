@@ -42,20 +42,16 @@
                                         <button class=" form-group btn btn-primary ml-3  " type="submit">Check
                                             Deposit</button>
                                     </div>
-
-
-
                                 </div>
-
                     </fieldset>
                 </form>
             </div>
         </div>
     </div>
-
-
     <!-- END card-->
 </div>
 @endsection
 @section('styles')@endsection
 @section('scripts')@endsection
+
+

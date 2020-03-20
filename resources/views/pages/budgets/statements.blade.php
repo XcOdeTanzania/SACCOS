@@ -43,19 +43,16 @@
                                 <td>Education</td>
 
                                 <td>
-                                    <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
-                                        <i class="fa fa-edit m-2 text-primary" data-toggle="tooltip"
-                                            data-placement="top" title="Edit">
-                                        </i></a>
-                                    <i class="fa fa-trash m-2 text-danger" data-toggle="tooltip" data-placement="top"
-                                        title="Delete">
-                                    </i>
+                                <a href="#editincentivesstatements" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#deleteincentivesstatements" data-toggle="modal"><i class="fas fa-trash-alt"
+                                            style="color:red"></i></a>
                                 </td>
                                 </tr>
                                 @endfor
                     </table>
                 </div><br>
-                <button href="#addSavingType" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                <button href="#addincentivesstatements" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
                         class="fa mr-2 fas fa-plus"></em>Add</button>
             </div>
         </div>
@@ -66,3 +63,75 @@
         @section('scripts')
         <script src="{{ asset('angle/js/forms.js') }}"></script>
         @endsection
+
+        <!-- Add Modal HTML -->
+        <div id="addincentivesstatements" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add Statements</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>statements</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Add">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit Modal HTML -->
+            <div id="editincentivesstatements" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Edit Statements</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Statements</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Edit">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delete Modal HTML -->
+            <div id="deleteincentivesstatements" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Delete Statements</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are You Sure You Want To Delete This Type?</p>
+                                <p class="text-warning"><small>This action cannot be undone.</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+

@@ -55,7 +55,6 @@
                                     <label> Type of Saving</label>
                                     <input type="text" class="form-control" required>
                                 </div>
-
                             </div>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Add">
@@ -66,7 +65,7 @@
                 </div>
             </div>
 
-            <!-- Add Modal HTML -->
+            <!--Edit Modal HTML -->
             <div id="editSavingType" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">

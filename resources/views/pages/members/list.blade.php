@@ -35,7 +35,8 @@
                                     <td>012JL6</td>
                                     <td>13-6-2019</td>
                                     <td>0722345678</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">Edit</button></a></div></td>
+                                    <td><div><a href="#editSavingType" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td></div></td>
                                 </tr>
                             </tbody>
                             <tbody>
@@ -48,7 +49,8 @@
                                     <td>012JL6</td>
                                     <td>13-6-2019</td>
                                     <td>0722345678</td>
-                                    <td><div> <a href="#"> <button class="btn btn-primary" type="submit">Edit</button></a></div></td>
+                                    <td><div> <a href="editlistofmember" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
                                 </tr>
                                 
                             </tbody>
@@ -65,3 +67,29 @@
 @endsection
 @section('styles')@endsection
 @section('scripts')@endsection
+
+
+ <!--Edit Modal HTML -->
+ <div id="editlistofmember" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Edit List of Member</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>List of Member</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Edit">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+

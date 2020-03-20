@@ -13,7 +13,7 @@
                 <div class="card card-default">
                     <div class="card-header">
                     <div class="bg-gray-lighter px-3 py-2 my-3">Add</div>
-                    <button href="#addSavingType" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                    <button href="#addspecialbudget" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
                         class="fa mr-2 fas fa-plus"></em>Add</button>
                     <div class="card-body">
                         <fieldset>
@@ -46,3 +46,28 @@
 @section('scripts')
     <script src="{{ asset('angle/js/validation.js') }}"></script>
 @endsection
+
+
+      <!--Add Modal HTML-->
+      <div id="addspecialbudget" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add Special budget</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>special budget</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Add">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>

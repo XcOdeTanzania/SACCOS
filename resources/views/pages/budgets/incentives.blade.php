@@ -76,7 +76,8 @@
                  </fieldset>
                   </div><br>
                 <div> <a href="#"> <button class="btn btn-primary" type="submit">cancel</button></a>
-                 <a href="#"> <button class="btn btn-primary" type="submit">Add</button></a></div>
+                <button href="#addincentives" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                        class="fa mr-2 fas fa-plus"></em>Add</button></div>
                  </fieldset>   
                 <!-- END card-->
             </form>
@@ -88,3 +89,28 @@
 @section('scripts')
     <script src="{{ asset('angle/js/validation.js') }}"></script>
 @endsection
+
+         <!--Add Modal HTML-->
+<div id="addincentives" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add incentives</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>add</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Add">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
