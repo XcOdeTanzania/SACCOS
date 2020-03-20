@@ -21,21 +21,18 @@ return [
     ],
     [
         'text' => 'Dashboard',
-        'route' => 'dashboard',
+        'route' => '/',
         'icon' => 'icon-home',
         'alert' => '3',
         'label' => 'badge badge-info',
-        'submenu' => [
-            [
-                'text' => '',
-                'route' => '#'
-            ],
-            [
-                'text' => '',
-                'route' => '#'
-            ]
-        ],
-        'translate' => 'sidebar.nav.DASHBOARD'
+        // 'submenu' => [
+        //     [
+        //         'text' => '',
+        //         'route' => '/'
+        //     ],
+
+        // ],
+        // 'translate' => 'sidebar.nav.DASHBOARD'
     ],
     [
         'text' => 'Saccos Info',
@@ -63,13 +60,28 @@ return [
         'translate' => 'sidebar.nav.element.ELEMENTS'
     ],
     [
-        'text' => 'Matengo',
-        'route' => 'matengo',
+        'text' => 'Budgets',
+        'route' => 'Budgets',
         'icon' => 'icon-layers',
         'submenu' => [
             [
-                'text' => '',
-                'route' => '#',
+                'text' => 'Add budgets',
+                'route' => 'budgets/add',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'List of all budgets',
+                'route' => 'budgets/list',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Incentives',
+                'route' => 'budgets/incentives',
+                'translate' => 'sidebar.nav.element.BUTTON'
+            ],
+            [
+                'text' => 'Incentives Statements',
+                'route' => 'budgets/statements',
                 'translate' => 'sidebar.nav.element.BUTTON'
             ],
 

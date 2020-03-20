@@ -18,7 +18,7 @@
                                     <label for="user" class="col-form-label mr-2">From:</label>
                                     <div>
                                         <div class="input-group date AngleDate">
-                                            <input id="from" class="form-control" type="text" />
+                                            <input id="from" class="form-control" type="date" />
                                             <span class="input-group-append input-group-addon">
                                                 <span class="input-group-text fas fa-calendar-alt"></span></span>
                                         </div>
@@ -26,7 +26,7 @@
                                     <label for="user" class="ml-4 col-form-label mr-2">To:</label>
                                     <div>
                                         <div class="input-group date AngleDate">
-                                            <input id="to" class="form-control" type="text" />
+                                            <input id="to" class="form-control" type="date" />
                                             <span class="input-group-append input-group-addon">
                                                 <span class="input-group-text fas fa-calendar-alt"></span></span>
                                         </div>

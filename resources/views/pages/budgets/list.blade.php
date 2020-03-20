@@ -2,7 +2,7 @@
 @section('content')
 <div class="content-heading">
     <div>
-        Loan types
+        List Of Budgets
     </div>
 </div>
 <!-- START row-->
@@ -25,19 +25,18 @@
                     <table class="table table-sm">
                         <thead>
                             <tr class="bg-gray">
-                                <th>SN</th>
-                                <th>Loan type</th>
-                                <th>Interest%</th>
-                                <th>Formula</th>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Additional %/deficit</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @for($i=0; $i<3 ; $i++) 
                             <tr>
-                                <td>1</td>
-                                <td>Business Loan</td>
-                                <td>47.1</td>
-                                <td>Reduce</td>
+                                <td>{{$i + 1}}</td>
+                                <td>The neccessary savings</td>
+                                <td>15.00%</td>
 
                                 <td>
                                     <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
@@ -49,6 +48,7 @@
                                     </i>
                                 </td>
                                 </tr>
+                                @endfor
                     </table>
                 </div><br>
                 <button href="#addSavingType" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
