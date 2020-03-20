@@ -33,11 +33,11 @@
                              <div class="col-2"></div>
                                   <button class=" form-group btn btn-primary ml-3  " type="submit">Search</button>
                         </div>
-                            </div>
-                            </div>
-                            </div> 
-                            </div>
-                            </div>
+                        </div>
+                        </div>
+                        </div> 
+                        </div>
+                        </div>
                             <div class="card-body">
                                 <div class="table-responsive table-bordered">
                                     <table class="table table-sm">
@@ -115,9 +115,82 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
+    <div class="modal-body">
+        <div class ="form-group row">
+            <label class ="col-form-label col-md-3">Asset Name:</label>
+            <div class = "input-group col-6">
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label for = "input-id-1" class="col-form-label col-md-3">Asset Category:</label>
+            <div class ="col-6">
+                <select name="accounttag" class="form-control" id="accountag">
+                    <option>Select</option>
+                    <option>cars</option>
+                    <option>bikes</option>
+                </select>
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label for = "input-id-1" class="col-form-label col-md-3">Bank or Cash:</label>
+            <div class ="col-6">
+                <select name="accounttag" class="form-control" id="accountag">
+                    <option>Select</option>
+                    <option>Bank</option>
+                    <option>Cash</option>
+                </select>
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label for = "input-id-1" class="col-form-label col-md-3">Account Name:</label>
+            <div class ="col-6">
+                <select name="accounttag" class="form-control" id="accountag">
+                    <option>Select</option>
+                    <option>MANTRACK SACCOSS</option>
+                    <option>0j12345897</option>
+                </select>
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label class ="col-form-label col-md-3">Purchase Price:</label>
+            <div class = "input-group col-6">
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label class ="col-form-label col-md-3">Appre/Depr(%):</label>
+            <div class = "input-group col-6">
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label for = "input-id-1" class="col-form-label col-md-3">Is it Depreciation value:</label>
+            <div class ="col-6">
+                <select name="accounttag" class="form-control" id="accountag">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+        <div class ="form-group row">
+            <label for="user" class="col-form-label col-md-3">Purchase Date:</label>
+                <div>
+                    <div class="input-group date AngleDate ml-2" >
+                        <input id="from" class="form-control" type="text"/>
+                        <span class="input-group-append input-group-addon">
+                        <span class="input-group-text fas fa-calendar-alt"></span></span>
+                    </div>
+                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label">Description:</label>
+                <div class="mb-2 ml-2">
+                    <div> <textarea id="description" rows="4" cols="42" ></textarea></div>
+                </div>
+        </div>  
+    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>

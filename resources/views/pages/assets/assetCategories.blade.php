@@ -55,7 +55,7 @@
       </div>
       <div class="modal-body">
       <div class="form-group row">
-            <label class="md-6 col-form-label">Category Name:</label>
+            <label class="md-6 col-form-label ml-2">Category Name:</label>
             <div class="col-xl-8"><input class="form-control" type="text"></div>
         </div>
       </div>
