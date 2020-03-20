@@ -39,7 +39,7 @@
                             </div>
                             </div>
                             <div class="col mt-2"><div class="row">Expenditures Ledger, Year:2016
-                            </div></div> 
+                            </div></div>
                             </div>
                             </div>
                             <div class="card-body">
@@ -87,8 +87,7 @@
                             </div>
                         </div>
             <!-- END card-->
-        </div>
-    </div>
+        
     <!-- END row-->
 @endsection
 @section('styles')@endsection
