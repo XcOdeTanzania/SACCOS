@@ -74,9 +74,22 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <div class="form-group">
-                                    <label>statements</label>
-                                    <input type="text" class="form-control" required>
+                            <div class="form-group">
+                                    <label>	Month</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Year</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Budget</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Amount</label>
+                                    <input type="number" class="form-control" required>
+                                    
+                                </div>
+                                </div>
+                                </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -98,9 +111,21 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Statements</label>
-                                    <input type="text" class="form-control" required>
+                            <div class="form-group">
+                                    <label>	Month</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Year</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>	Month</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Year</label>
+                                    <input type="number" class="form-control" required>   
+                                </div>
+                                </div>
+                                </div>
                                 </div>
 
                             </div>

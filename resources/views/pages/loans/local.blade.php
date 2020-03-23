@@ -83,7 +83,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div> <a href="#"> <button class="btn btn-primary" type="submit">Add</button></a>
+                                <div> <button href="#" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                        class="fa mr-2 fas fa-plus"></em>Add</button>
                                     <a href="#"> <button class="btn btn-primary" type="submit">Delete</button></a>
                                 </div>
                             </fieldset>
@@ -180,7 +181,8 @@
                                 </div>
                                 <br>
                                 <div class="row from-control">
-                                        <button class=" form-group btn btn-primary ml-3" type="submit">Add</button>
+                                <button href="#addcreditremaining" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                        class="fa mr-2 fas fa-plus"></em>Add</button>
                                     </div>
                             </div>                     
                         </div>
@@ -220,3 +222,51 @@
     @endsection
     @section('styles')@endsection
     @section('scripts')@endsection
+
+    <!-- Add Modal HTML -->
+ <div id="addcreditremaining" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Credit Remaining</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Gender</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Registration Number</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Loan Type</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Borrowed</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Loan remained</label>
+                                    <input type="number" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Interest remained</label>
+                                    <input type="number" class="form-control" required>
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Add">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>

@@ -8,8 +8,6 @@
     <div class="card">
         <div class="card-header">
             <div class="card-body">
-
-
                 <form class="form-horizontal" method="get" action="">
                     <fieldset>
                         <div class="card-header">
@@ -30,30 +28,21 @@
                                             <span class="input-group-append input-group-addon">
                                                 <span class="input-group-text fas fa-calendar-alt"></span></span>
                                         </div>
-                                    </div>
-
+                                    </div><br><br><br>
                                     <div class="row from-control">
                                         <div class="col-2"></div>
-                                        <button class=" form-group btn btn-primary ml-3  " type="submit">Check
-                                            Transaction</button>
+                                        <button class="form-group btn btn-primary ml-3" type="submit">Check Transaction</button>
                                     </div>
                                     <div class="row from-control">
                                         <div class="col-2"></div>
-                                        <button class=" form-group btn btn-primary ml-3  " type="submit">Check
-                                            Deposit</button>
+                                        <button class="form-group btn btn-primary ml-3" type="submit">Check Deposit</button>
                                     </div>
-
-
-
                                 </div>
-
                     </fieldset>
                 </form>
             </div>
         </div>
     </div>
-
-
     <!-- END card-->
 </div>
 @endsection

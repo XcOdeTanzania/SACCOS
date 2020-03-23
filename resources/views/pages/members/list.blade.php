@@ -35,8 +35,8 @@
                                     <td>012JL6</td>
                                     <td>13-6-2019</td>
                                     <td>0722345678</td>
-                                    <td><div><a href="#editSavingType" data-toggle="modal"><i class="fas fa-pen"
-                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td></div></td>
+                                    <td><div><a href="#editlistofmember" data-toggle="modal"><i class="fas fa-pen"
+                                            style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
                                 </tr>
                             </tbody>
                             <tbody>
@@ -49,24 +49,72 @@
                                     <td>012JL6</td>
                                     <td>13-6-2019</td>
                                     <td>0722345678</td>
-                                    <td><div> <a href="editlistofmember" data-toggle="modal"><i class="fas fa-pen"
+                                    <td> <div><a href="#editlistofmember" data-toggle="modal"><i class="fas fa-pen"
                                             style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
-                                </tr>
-                                
+                                </tr>  
                             </tbody>
-                           
                         </table>
-                        
-                    </div>
+                    </div><br><br>
+                    <button href="#addlistofmember" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
+                        class="fa mr-2 fas fa-plus"></em>Add</button>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
+    
+
     <!-- END row-->
 @endsection
 @section('styles')@endsection
 @section('scripts')@endsection
+
+<!--Add Modal HTML -->
+<div id="addlistofmember" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add List of Member</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Age</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Group</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Payment Number</label>
+                                    <input type="number" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Joined Date</label>
+                                    <input type="date" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                   </div>
+                              </div>
+                             </div>
+                           </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Add">
+                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
 
 
  <!--Edit Modal HTML -->
@@ -80,9 +128,33 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label>List of Member</label>
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Age</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Group</label>
+                                    <input type="text" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Payment Number</label>
+                                    <input type="number" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Joined Date</label>
+                                    <input type="date" class="form-control" required>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
                                     <input type="text" class="form-control" required>
                                 </div>
+                                   </div>
+                              </div>
+                             </div>
+                           </div>
+                            </div>
+                            </div>
                             </div>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Edit">

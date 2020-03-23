@@ -28,7 +28,7 @@
                             <option>Let them change</option>
                   </select></div>
                   </div><br><br>
-                <div> <a href="#"> <button class="btn btn-primary" type="submit">Edit</button></a></div>
+                <div> <a href="#"> <button class="btn btn-primary" type="submit">Save</button></a></div>
                  </fieldset>
                           
                 <!-- END card-->

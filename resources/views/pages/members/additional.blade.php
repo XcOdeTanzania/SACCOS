@@ -66,7 +66,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label> Additional Information</label>
+                                    <label>Field Name</label>
                                     <input type="text" class="form-control" required>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label> Additional Information</label>
+                                    <label>Field Name</label>
                                     <input type="text" class="form-control" required>
                                 </div>
 

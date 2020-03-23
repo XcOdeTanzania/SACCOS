@@ -74,11 +74,27 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <div class="form-group">
-                                    <label>user</label>
+                            <div class="form-group">
+                                    <label>	First Name</label>
                                     <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Middle Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>	Last Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Position</label>
+                                    <input type="text" class="form-control" required>
+                                </div>    
                                 </div>
-                            </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Add">
                                 <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
@@ -98,11 +114,26 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <div class="form-group">
-                                    <label>user</label>
+                            <div class="form-group">
+                                    <label>	First Name</label>
                                     <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Middle Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>	Last Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Position</label>
+                                    <input type="text" class="form-control" required>
+                                </div>    
                                 </div>
-
+                                </div>
+                                </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Edit">

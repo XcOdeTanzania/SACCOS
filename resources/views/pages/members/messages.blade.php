@@ -22,12 +22,13 @@
                   </select></div>
                  </fieldset>
                         <fieldset>
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">Message</label>
-                                <div class="col-md-6"><input class="form-control" type="text"></div>
-                            </div>
+                        <div class="form-group row mb-2"><label class="col-md-2 col-form-label mb-2">Message:</label>
+                    <div class="col-xl-6 col-10">
+                        <div> <textarea id="description" rows="4" cols="68"></textarea></div>
+                    </div>
+                </div>
                         </fieldset>
-                <div> <a href="#"> <button class="btn btn-primary" type="submit">Add</button></a></div>
+                <div><button class="form-group btn btn-primary ml-3" type="submit">Send</button></div>
                  </fieldset>   
                 <!-- END card-->
             </form>

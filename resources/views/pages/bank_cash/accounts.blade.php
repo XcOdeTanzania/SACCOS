@@ -40,11 +40,9 @@
                                     <td><a href="#editnameofaccount" data-toggle="modal"><i class="fas fa-pen"
                                             style="color:black"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a href="#deletenameofaccount" data-toggle="modal"><i class="fas fa-trash-alt"
-                                            style="color:red"></i></a>
-                                         
+                                            style="color:red"></i></a>   
                             </tbody>
                         </table>
-                    
                     </div><br><br>
                     <button href="#addnameofaccount" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
                         class="fa mr-2 fas fa-plus"></em>Add</button>

@@ -72,27 +72,3 @@
 @section('scripts')
     <script src="{{ asset('angle/js/validation.js') }}"></script>
 @endsection
-
- <!-- Add Modal HTML -->
- <div id="adduser" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Add user</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>user</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="submit" class="btn btn-primary" value="Add">
-                                <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>

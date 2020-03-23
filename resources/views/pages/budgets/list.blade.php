@@ -66,15 +66,20 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">Add list of budget</h4>
+                                <h4 class="modal-title">Add list</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label>list</label>
+                                    <label>	Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Additional %/deficit</label>
                                     <input type="text" class="form-control" required>
                                 </div>
+                                </div>
                             </div>
+                            
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Add">
                                 <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
@@ -83,8 +88,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Add Modal HTML -->
+            <!-- Edit Modal HTML -->
             <div id="editlistofbudget" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -95,11 +99,15 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label>list of budget</label>
+                                    <label>	Name</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="form-group">
+                                    <label>Additional %/deficit</label>
                                     <input type="text" class="form-control" required>
                                 </div>
-
+                                </div>
                             </div>
+                            
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Edit">
                                 <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
