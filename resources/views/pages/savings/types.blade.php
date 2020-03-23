@@ -41,7 +41,7 @@
             <script src="{{ asset('angle/js/datatable.js') }}"></script>
             @endsection
 
-            <!-- Add Modal HTML -->
+         <!-- Add Modal HTML -->
             <div id="addSavingType" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -55,7 +55,7 @@
                                     <label> Type of Saving</label>
                                     <input type="text" class="form-control" required>
                                 </div>
-                            </div>
+                                        </div>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary" value="Add">
                                 <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">

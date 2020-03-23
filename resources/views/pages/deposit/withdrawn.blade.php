@@ -71,13 +71,14 @@
                                 <td>12%</td>
 
                                 <td>
-                                    <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
-                                        <i class="fa fa-edit m-2 text-primary" data-toggle="tooltip"
-                                            data-placement="top" title="Edit">
+                                    <a type="button" data-toggle="modal" data-target="#editDeposit">
+                                        <i class="fa fa-pen m-2 text-primary" data-toggle="tooltip" data-placement="top"
+                                            title="Edit">
                                         </i></a>
-                                    <i class="fa fa-trash m-2 text-danger" data-toggle="tooltip" data-placement="top"
-                                        title="Delete">
-                                    </i>
+                                    <a type="button" data-toggle="modal" data-target="#deleteDeposit">
+                                        <i class="fa fa-trash text-primary" data-toggle="tooltip" data-placement="top"
+                                            title="Delete">
+                                        </i></a>
                                 </td>
                                 </tr>
                                 @endfor
@@ -103,3 +104,80 @@
         @section('scripts')
         <script src="{{ asset('angle/js/forms.js') }}"></script>
         @endsection
+
+        <!--Edit Modal HTML -->
+        <div id="editDeposit" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Edit Saving Info</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label> Members Id</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label> Deposited Amount</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Interest</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group"><label>
+                                    Cash/Bank</label>
+                                <div><select name="accounttag" class="form-control" id="accountag">
+                                        <option>Select</option>
+                                        <option>Cash</option>
+                                        <option>Bank</option>
+
+                                    </select></div>
+                            </div>
+
+                            <div class="form-group"><label>
+                                    Account Name</label>
+                                <div><select name="accounttag" class="form-control" id="accountag">
+                                        <option>Select</option>
+                                        <option>CRDB</option>
+                                        <option>STANDARD CHARTERED</option>
+
+                                    </select></div>
+                            </div>
+                            <div class="form-group">
+                                <label> Payment Document</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value="Add">
+                            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Modal HTML -->
+        <div id="deleteDeposit" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Delete Deposit</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are You Sure You Want To Delete This Deposit?</p>
+                            <p class="text-warning"><small>This action cannot be undone.</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                            <input type="submit" class="btn btn-danger" value="Delete">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>

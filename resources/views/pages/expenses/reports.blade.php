@@ -71,13 +71,14 @@
                                 <td>12%</td>
 
                                 <td>
-                                    <a type="button" data-toggle="modal" data-target="#UpdateAssetDetailsModal">
-                                        <i class="fa fa-edit m-2 text-primary" data-toggle="tooltip"
+                                    <a type="button" data-toggle="modal" data-target="#editReports">
+                                        <i class="fa fa-pen m-2 text-primary" data-toggle="tooltip"
                                             data-placement="top" title="Edit">
                                         </i></a>
-                                    <i class="fa fa-trash m-2 text-danger" data-toggle="tooltip" data-placement="top"
-                                        title="Delete">
-                                    </i>
+                                        <a type="button" data-toggle="modal" data-target="#deleteReports">
+                                            <i class="fa fa-trash m-2 text-primary" data-toggle="tooltip" data-placement="top" title="Edit">
+                                            </i></a>
+
                                 </td>
                                 </tr>
                                 @endfor
@@ -103,3 +104,65 @@
         @section('scripts')
         <script src="{{ asset('angle/js/forms.js') }}"></script>
         @endsection
+
+        <!--Edit Modal HTML -->
+        <div id="editReports" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Edit Reports Info</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label> Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Number</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Amount</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label> Receipt</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value="Add">
+                            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Close">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Modal HTML -->
+        <div id="deleteReports" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Delete Report</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are You Sure You Want To Delete This Report?</p>
+                            <p class="text-warning"><small>This action cannot be undone.</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                            <input type="submit" class="btn btn-danger" value="Delete">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
