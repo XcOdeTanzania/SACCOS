@@ -61,8 +61,8 @@
                  </fieldset>
                  <button href="#adduser" class="btn btn-oval btn-primary" type="button" data-toggle="modal"><em
                         class="fa mr-2 fas fa-plus"></em>Add</button>
-                 </fieldset>   
-                <!-- END card-->
+                 </fieldset>
+                <!--= END card-->
             </form>
         </div>
     </div>
